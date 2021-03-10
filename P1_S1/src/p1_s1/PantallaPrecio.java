@@ -1,21 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package p1_s1;
 
-/**
- *
- * @author pablojj
- */
-public class PantallaPrecio extends javax.swing.JFrame {
+import java.util.Observable;
+import java.util.Observer;
 
-    /**
-     * Creates new form PantallaPrecio
-     */
+
+public class PantallaPrecio extends javax.swing.JFrame implements Observer {
+
     public PantallaPrecio() {
         initComponents();
+        this.jLabel1.setText("");
     }
 
     /**
@@ -27,17 +20,28 @@ public class PantallaPrecio extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jLabel1.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
+        jLabel1.setText("jLabel1");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(90, 90, 90)
+                .addComponent(jLabel1)
+                .addContainerGap(106, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(67, 67, 67)
+                .addComponent(jLabel1)
+                .addContainerGap(80, Short.MAX_VALUE))
         );
 
         pack();
@@ -78,6 +82,12 @@ public class PantallaPrecio extends javax.swing.JFrame {
         });
     }
 
+    @Override
+    public void update(Observable o, Object arg) {
+        this.jLabel1.setText(Double.toString(arg));
+    }
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
