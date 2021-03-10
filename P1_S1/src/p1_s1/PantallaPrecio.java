@@ -84,7 +84,7 @@ public class PantallaPrecio extends javax.swing.JFrame implements Observer {
 
     @Override
     public void update(Observable o, Object arg) {
-        this.jLabel1.setText(Double.toString(arg));
+        //this.jLabel1.setText(Double.toString(arg));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
