@@ -1,11 +1,14 @@
 package p1_s1;
 
 import java.util.ArrayList;
+import java.util.Observable;
+import java.util.Observer;
 import javax.swing.DefaultListModel;
+import javax.swing.JFrame;
 import javax.swing.ListModel;
 
 
-public class HistorialPrecio extends javax.swing.JFrame {
+public class HistorialPrecio extends javax.swing.JFrame implements Observer {
 
     private static ArrayList<String> precios;
     
@@ -16,9 +19,28 @@ public class HistorialPrecio extends javax.swing.JFrame {
     public HistorialPrecio() {
         initComponents();
         // Eliminar los elementos iniciales
-        jList1.setListData((String[]) precios.toArray());
+        this.setLocationRelativeTo(null);
+        this.setTitle("Historial precios");
+        jList1.setListData((String[])  new String[]{});
+        this.setVisible(true);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
+    @Override
+    public void update(Observable o, Object arg) {
+        // 1. Añado al array historial de precios
+        Ticket t = (Ticket) o;
+        precios.add(Double.toString((double) t.getPrecio()));
+        
+        // Tengo que pasar a array primitivo, no se pq 
+        // da problema de casteo: (String[]) precios.toArray();
+        String[] a = new String[precios.size()];
+        for(int i=0; i<precios.size(); i++) {
+            a[i] = precios.get(i) + " €";
+        }
+        
+        jList1.setListData(a);
+    }
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -43,8 +65,8 @@ public class HistorialPrecio extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 315, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -57,41 +79,10 @@ public class HistorialPrecio extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(HistorialPrecio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(HistorialPrecio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(HistorialPrecio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(HistorialPrecio.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new HistorialPrecio().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JList<String> jList1;
     private javax.swing.JScrollPane jScrollPane2;
     // End of variables declaration//GEN-END:variables
+
 }

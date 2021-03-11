@@ -12,17 +12,11 @@ public class Ticket extends Observable implements Runnable {
     private double precio;
     private static Random rdn = new Random();
     private Thread miHilo;
-    private ArrayList<Observer> observadores;
     
     public Ticket() {
         this.precio = rdn.nextDouble() * 100;
         this.miHilo = new Thread("THREAD1");
-        this.miHilo.start();
-        this.observadores =  new ArrayList<Observer>();
-    }
-
-    public void addObservador(Observer o) {
-        observadores.add(o);
+        
     }
 
     public double getPrecio() {
@@ -36,11 +30,6 @@ public class Ticket extends Observable implements Runnable {
         System.out.println(this.precio);
     }
     
-    public void notificar(){
-        for(int i=0; i < observadores.size()-1 ; i++){ //Por cada observador suscrito se notifica para update
-            observadores.get(i).update(this, precio);
-        }
-    }
 
     @Override
     public String toString() {
@@ -54,13 +43,10 @@ public class Ticket extends Observable implements Runnable {
 
     @Override
     public void run() {
-        System.out.println("esdtoy en el run ??¿?¿?¿?¿?¿?¿?¿?¿");
         while (true) {
             try {
                 miHilo.sleep(2000);
                 this.setPrecio(rdn.nextDouble() * 100);
-                //Notidicamos que se ha producido un cambio
-                notificar();
             } catch (InterruptedException ex) {
                 System.err.println(ex.getMessage());
             }
