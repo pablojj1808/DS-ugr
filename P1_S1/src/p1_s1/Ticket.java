@@ -45,7 +45,7 @@ public class Ticket extends Observable implements Runnable {
     public void run() {
         while (true) {
             try {
-                miHilo.sleep(2000);
+                miHilo.sleep(3000);
                 this.setPrecio(rdn.nextDouble() * 100);
             } catch (InterruptedException ex) {
                 System.err.println(ex.getMessage());
