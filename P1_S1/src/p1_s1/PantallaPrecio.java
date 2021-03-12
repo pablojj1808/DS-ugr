@@ -14,7 +14,7 @@ public class PantallaPrecio extends javax.swing.JFrame {
         initComponents();
         
         this.t = t;
-       
+        this.setTitle("Precio ");
         this.jLabel1.setText("");
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
