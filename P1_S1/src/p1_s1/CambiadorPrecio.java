@@ -12,7 +12,7 @@ public class CambiadorPrecio extends javax.swing.JFrame implements Observer {
     
     public CambiadorPrecio(Ticket t) {
         initComponents();
-        this.setTitle("Cambiador de precio");
+        this.setTitle("Cambiador de precio (Tercer Observador)");
         this.setVisible(true);
         this.t = t;
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

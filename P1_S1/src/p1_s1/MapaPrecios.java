@@ -22,7 +22,7 @@ public class MapaPrecios extends javax.swing.JFrame implements Observer{
     
     public MapaPrecios() {
         initComponents();
-        this.setTitle("Mapa de precios");
+        this.setTitle("Mapa de precios (Cuarto Observador)");
         this.setVisible(true);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);

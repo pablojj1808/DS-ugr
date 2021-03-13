@@ -19,6 +19,7 @@ public class P1_S1 {
        t.addObserver(mp);
        
        t.start();
+       precioScreen.start();
     }
     
 }
