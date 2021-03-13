@@ -30,8 +30,7 @@ public class HistorialPrecio extends javax.swing.JFrame implements Observer {
     public void update(Observable o, Object arg) {
         // 1. Añado al array historial de precios
         Ticket t = (Ticket) o;
-        precios.add(Double.toString((double) t.getPrecio()));
-        
+        precios.add(Double.toString((double) arg)); //Toma el valor del agumento del notifyObservers
         // Tengo que pasar a array primitivo, no se pq 
         // da problema de casteo: (String[]) precios.toArray();
         String[] a = new String[precios.size()];
