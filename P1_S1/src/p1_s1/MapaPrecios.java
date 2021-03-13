@@ -157,7 +157,7 @@ public class MapaPrecios extends javax.swing.JFrame implements Observer{
 
         titulo.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         titulo.setText("Precio sin IVA = ");
-        getContentPane().add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 0, 130, 40));
+        getContentPane().add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 160, 40));
 
         precioOriginal.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
         precioOriginal.setText("jLabel2");
