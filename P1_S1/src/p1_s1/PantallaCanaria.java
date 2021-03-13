@@ -4,7 +4,8 @@ import java.util.Observable;
 import java.util.Observer;
 import javax.swing.JFrame;
 
-public class PantallaCanaria extends javax.swing.JFrame implements Observer {
+public class PantallaCanaria extends javax.swing.JFrame 
+                             implements Observer, Grafico {
 
     private static final int IGIC = 7; // 7%
     
@@ -70,6 +71,5 @@ public class PantallaCanaria extends javax.swing.JFrame implements Observer {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
-
 
 }

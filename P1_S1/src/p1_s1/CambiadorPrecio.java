@@ -6,7 +6,8 @@ import javax.swing.JFrame;
 import javax.swing.JTextField;
 
 
-public class CambiadorPrecio extends javax.swing.JFrame implements Observer {
+public class CambiadorPrecio extends javax.swing.JFrame 
+                                implements Observer, Grafico {
 
     private Ticket t;
     
