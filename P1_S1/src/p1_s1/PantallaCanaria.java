@@ -18,8 +18,7 @@ public class PantallaCanaria extends javax.swing.JFrame implements Observer {
 
     @Override
     public void update(Observable o, Object arg) {
-        Ticket t = (Ticket) o;
-        double p = t.getPrecio();
+        double p = (double) arg;
         p -= p*0.07;
         jLabel2.setText(Double.toString(p));
     }

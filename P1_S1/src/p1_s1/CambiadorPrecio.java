@@ -12,18 +12,17 @@ public class CambiadorPrecio extends javax.swing.JFrame implements Observer {
     
     public CambiadorPrecio(Ticket t) {
         initComponents();
-        setTitle("Cambiador de precio");
-        this.setTitle("precio canario");
+        this.setTitle("Cambiador de precio");
         this.setVisible(true);
         this.t = t;
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLocationRelativeTo(null);
+        valor.setText("");
     }
     
     @Override
     public void update(Observable o, Object arg) {
-        Ticket t = (Ticket) o;
-        double p = t.getPrecio();
+        double p = (double) arg;
         valor.setText(Double.toString(p));
     }
 
@@ -51,7 +50,8 @@ public class CambiadorPrecio extends javax.swing.JFrame implements Observer {
 
         jTextField1.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
 
-        jButton1.setText("jButton1");
+        jButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jButton1.setText("Cambiar precio");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);

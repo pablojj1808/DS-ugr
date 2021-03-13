@@ -10,11 +10,13 @@ public class P1_S1 {
        PantallaPrecio precioScreen = new PantallaPrecio(t);
        PantallaCanaria pc = new PantallaCanaria();
        CambiadorPrecio cp = new CambiadorPrecio(t);
+       MapaPrecios mp = new MapaPrecios();
        
        
        t.addObserver(precioHistorial);
        t.addObserver(pc);
        t.addObserver(cp);
+       t.addObserver(mp);
        
        t.start();
     }
