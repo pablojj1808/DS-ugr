@@ -6,7 +6,11 @@ import java.util.Observer;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
+/**
+ * 
+ * @author Raquel Molina Reche (GH: rmr00),
+ * Pablo Jiménez Jiménez (GH: pablojj1808)
+ */
 public class Ticket extends Observable implements Runnable {
 
     private double precio;
@@ -26,7 +30,7 @@ public class Ticket extends Observable implements Runnable {
     public void setPrecio(double precio) {
         this.precio = precio;
         this.setChanged(); //antes de llamar a notifyObservers hay que invocar al método setChanged para dejar constancia de que se ha producido un cambio
-        this.notifyObservers();
+        this.notifyObservers(this.precio); //el método notifyObservers tiene como argumento el Object con la información a publicar 
         System.out.println(this.precio);
     }
     
