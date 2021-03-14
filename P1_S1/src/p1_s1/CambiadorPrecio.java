@@ -10,7 +10,8 @@ import javax.swing.JTextField;
  * @author Raquel Molina Reche (GH: rmr00),
  * Pablo Jiménez Jiménez (GH: pablojj1808)
  */
-public class CambiadorPrecio extends javax.swing.JFrame implements Observer {
+public class CambiadorPrecio extends javax.swing.JFrame 
+                                implements Component {
 
     private Ticket t;
     
@@ -116,5 +117,10 @@ public class CambiadorPrecio extends javax.swing.JFrame implements Observer {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel valor;
     // End of variables declaration//GEN-END:variables
+
+    @Override
+    public void operacion() {
+        
+    }
 
 }
