@@ -5,7 +5,11 @@ import java.util.Observable;
 import java.util.Observer;
 import javax.swing.JFrame;
 
-
+/**
+ * 
+ * @author Raquel Molina Reche (GH: rmr00),
+ * Pablo Jiménez Jiménez (GH: pablojj1808)
+ */
 public class MapaPrecios extends javax.swing.JFrame implements Observer{
 
     private static double precioCanarias;

@@ -4,7 +4,11 @@ import java.util.Observable;
 import java.util.Observer;
 import javax.swing.JFrame;
 
-
+/**
+ * 
+ * @author Raquel Molina Reche (GH: rmr00),
+ * Pablo Jiménez Jiménez (GH: pablojj1808)
+ */
 public class PantallaPrecio extends javax.swing.JFrame implements Runnable {
 
     private Ticket t;

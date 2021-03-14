@@ -6,7 +6,11 @@ import java.util.Observer;
 import java.util.Random;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
+/**
+ * 
+ * @author Raquel Molina Reche (GH: rmr00),
+ * Pablo Jiménez Jiménez (GH: pablojj1808)
+ */
 public class Ticket extends Observable implements Runnable {
 
     private double precio;

@@ -5,7 +5,11 @@ import java.util.Observer;
 import javax.swing.JFrame;
 import javax.swing.JTextField;
 
-
+/**
+ * 
+ * @author Raquel Molina Reche (GH: rmr00),
+ * Pablo Jiménez Jiménez (GH: pablojj1808)
+ */
 public class CambiadorPrecio extends javax.swing.JFrame implements Observer {
 
     private Ticket t;

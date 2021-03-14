@@ -7,7 +7,11 @@ import javax.swing.DefaultListModel;
 import javax.swing.JFrame;
 import javax.swing.ListModel;
 
-
+/**
+ * 
+ * @author Raquel Molina Reche (GH: rmr00),
+ * Pablo Jiménez Jiménez (GH: pablojj1808)
+ */
 public class HistorialPrecio extends javax.swing.JFrame implements Observer {
 
     private static ArrayList<String> precios;
