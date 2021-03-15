@@ -19,8 +19,8 @@ public class Principal {
        //Observador 4o
        Componente mp = new MapaPrecios();
        //Observador 5 composite
-       Componente panelCompuesto = new PanelCompuesto(t);
-        
+       PanelCompuesto panelCompuesto = new PanelCompuesto(t);
+       
        
        //Observadores suscritos
        t.addObserver(precioHistorial);
@@ -28,7 +28,7 @@ public class Principal {
        t.addObserver(mp);
        t.addObserver(panelCompuesto);
        
-       
+       WindowComposite wc = new WindowComposite(panelCompuesto);
        MainWindow vp = new MainWindow(t,precioHistorial, precioScreen,cp,mp);
        
        t.start();
