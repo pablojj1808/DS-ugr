@@ -61,37 +61,40 @@ public class MapaPrecios extends Componente {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        fondo = new javax.swing.JLabel();
         labelPrecioFrancia = new javax.swing.JLabel();
         labelPrecioPeninsula = new javax.swing.JLabel();
-        precioOriginal = new javax.swing.JLabel();
         titulo2 = new javax.swing.JLabel();
+        precioOriginal = new javax.swing.JLabel();
         boton = new javax.swing.JButton();
-        pinFrancia = new javax.swing.JLabel();
-        pinCanarias = new javax.swing.JLabel();
         pinPortugal = new javax.swing.JLabel();
-        labelPrecioPortugal = new javax.swing.JLabel();
+        pinFrancia = new javax.swing.JLabel();
         pinPeninsula = new javax.swing.JLabel();
+        pinCanarias = new javax.swing.JLabel();
+        labelPrecioCanarias = new javax.swing.JLabel();
+        labelPrecioPortugal = new javax.swing.JLabel();
+        fondo = new javax.swing.JLabel();
         titulo = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
-        labelPrecioCanarias = new javax.swing.JLabel();
 
-        fondo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/p1_s1/mapa.png"))); // NOI18N
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         labelPrecioFrancia.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         labelPrecioFrancia.setText("jLabel7");
         labelPrecioFrancia.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        add(labelPrecioFrancia, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 210, 70, 30));
 
         labelPrecioPeninsula.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         labelPrecioPeninsula.setForeground(new java.awt.Color(255, 255, 255));
         labelPrecioPeninsula.setText("jLabel5");
-
-        precioOriginal.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        precioOriginal.setText("jLabel2");
+        add(labelPrecioPeninsula, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 400, 130, 30));
 
         titulo2.setFont(new java.awt.Font("Calibri", 1, 14)); // NOI18N
         titulo2.setText("Precios con IVA por países : ");
+        add(titulo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, 50));
+
+        precioOriginal.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        precioOriginal.setText("jLabel2");
+        add(precioOriginal, new org.netbeans.lib.awtextra.AbsoluteConstraints(273, 10, 230, 20));
 
         boton.setBackground(new java.awt.Color(200, 22, 22));
         boton.setText("Ver todos los precios");
@@ -100,32 +103,7 @@ public class MapaPrecios extends Componente {
                 botonActionPerformed(evt);
             }
         });
-
-        pinFrancia.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        pinFrancia.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        pinFrancia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/p1_s1/pin.png"))); // NOI18N
-        pinFrancia.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        pinFrancia.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                pinFranciaMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                pinFranciaMouseExited(evt);
-            }
-        });
-
-        pinCanarias.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        pinCanarias.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        pinCanarias.setIcon(new javax.swing.ImageIcon(getClass().getResource("/p1_s1/pin.png"))); // NOI18N
-        pinCanarias.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        pinCanarias.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                pinCanariasMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                pinCanariasMouseExited(evt);
-            }
-        });
+        add(boton, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 520, 160, 30));
 
         pinPortugal.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         pinPortugal.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -139,10 +117,21 @@ public class MapaPrecios extends Componente {
                 pinPortugalMouseExited(evt);
             }
         });
+        add(pinPortugal, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 330, 50, 90));
 
-        labelPrecioPortugal.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        labelPrecioPortugal.setText("jLabel8");
-        labelPrecioPortugal.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        pinFrancia.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        pinFrancia.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        pinFrancia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/p1_s1/pin.png"))); // NOI18N
+        pinFrancia.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        pinFrancia.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                pinFranciaMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                pinFranciaMouseExited(evt);
+            }
+        });
+        add(pinFrancia, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 120, 50, 90));
 
         pinPeninsula.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         pinPeninsula.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -156,110 +145,39 @@ public class MapaPrecios extends Componente {
                 pinPeninsulaMouseExited(evt);
             }
         });
+        add(pinPeninsula, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 310, 50, 90));
 
-        titulo.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
-        titulo.setText("Precio sin IVA = ");
+        pinCanarias.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        pinCanarias.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        pinCanarias.setIcon(new javax.swing.ImageIcon(getClass().getResource("/p1_s1/pin.png"))); // NOI18N
+        pinCanarias.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        pinCanarias.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                pinCanariasMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                pinCanariasMouseExited(evt);
+            }
+        });
+        add(pinCanarias, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 450, 50, 90));
 
         labelPrecioCanarias.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         labelPrecioCanarias.setText("jLabel6");
+        add(labelPrecioCanarias, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 550, 100, 20));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 550, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(100, 100, 100)
-                            .addComponent(titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(10, 10, 10)
-                            .addComponent(precioOriginal, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(20, 20, 20)
-                            .addComponent(titulo2))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(30, 30, 30)
-                            .addComponent(labelPrecioCanarias, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(90, 90, 90)
-                            .addComponent(labelPrecioPortugal, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(220, 220, 220)
-                            .addComponent(labelPrecioPeninsula, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(350, 350, 350)
-                            .addComponent(pinFrancia, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(260, 260, 260)
-                            .addComponent(pinPeninsula, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(fondo, javax.swing.GroupLayout.PREFERRED_SIZE, 547, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(150, 150, 150)
-                            .addComponent(pinPortugal, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(40, 40, 40)
-                            .addComponent(pinCanarias, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 550, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(360, 360, 360)
-                            .addComponent(boton, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(340, 340, 340)
-                            .addComponent(labelPrecioFrancia, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 577, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(titulo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(10, 10, 10)
-                            .addComponent(precioOriginal, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGap(2, 2, 2)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(18, 18, 18)
-                            .addComponent(titulo2))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(508, 508, 508)
-                            .addComponent(labelPrecioCanarias, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(358, 358, 358)
-                            .addComponent(labelPrecioPortugal, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(348, 348, 348)
-                            .addComponent(labelPrecioPeninsula, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(98, 98, 98)
-                            .addComponent(pinFrancia, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(268, 268, 268)
-                            .addComponent(pinPeninsula, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(8, 8, 8)
-                            .addComponent(fondo, javax.swing.GroupLayout.PREFERRED_SIZE, 527, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(278, 278, 278)
-                            .addComponent(pinPortugal, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(408, 408, 408)
-                            .addComponent(pinCanarias, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(478, 478, 478)
-                            .addComponent(boton, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addGap(188, 188, 188)
-                            .addComponent(labelPrecioFrancia, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
+        labelPrecioPortugal.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        labelPrecioPortugal.setText("jLabel8");
+        labelPrecioPortugal.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        add(labelPrecioPortugal, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 400, 100, 30));
+
+        fondo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/p1_s1/mapa.png"))); // NOI18N
+        add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 547, 527));
+
+        titulo.setFont(new java.awt.Font("Calibri", 1, 18)); // NOI18N
+        titulo.setText("Precio sin IVA = ");
+        add(titulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(107, 0, 160, 40));
+        add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 540, 10));
     }// </editor-fold>//GEN-END:initComponents
 
     private void botonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonActionPerformed
