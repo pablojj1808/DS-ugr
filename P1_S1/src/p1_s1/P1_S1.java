@@ -18,16 +18,15 @@ public class P1_S1 {
         
         
         Component panelCompuesto = new PanelCompuesto(t);
-//        panelCompuesto.addComponente(cp);
-//        panelCompuesto.addComponente(mp);
-       // MainWindow mw = new MainWindow(t);
         
-        VentanaPrincipal vp = new VentanaPrincipal();
+        
        
        t.addObserver(precioHistorial);
        t.addObserver(cp);
        t.addObserver(mp);
-       t.addObserver(vp);
+       
+       
+       MainWindow vp = new MainWindow(t, precioScreen, panelCompuesto, mp);
        
        t.start();
        precioScreen.start();
