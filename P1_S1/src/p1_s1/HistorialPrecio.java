@@ -2,32 +2,25 @@ package p1_s1;
 
 import java.util.ArrayList;
 import java.util.Observable;
-import java.util.Observer;
-import javax.swing.DefaultListModel;
-import javax.swing.JFrame;
-import javax.swing.ListModel;
 
 /**
  * 
  * @author Raquel Molina Reche (GH: rmr00),
  * Pablo Jiménez Jiménez (GH: pablojj1808)
  */
-public class HistorialPrecio extends javax.swing.JFrame implements Observer {
+public class HistorialPrecio extends Component {
 
     private static ArrayList<String> precios;
     
     static {
         precios = new ArrayList<>();
     }
-   
+    
     public HistorialPrecio() {
         initComponents();
-        // Eliminar los elementos iniciales
-        this.setLocationRelativeTo(null);
-        this.setTitle("Historial precios (Primer Observador)");
+        
         jList1.setListData((String[])  new String[]{});
         this.setVisible(true);
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     @Override
@@ -49,12 +42,13 @@ public class HistorialPrecio extends javax.swing.JFrame implements Observer {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList<>();
         jLabel1 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jList1 = new javax.swing.JList<>();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel1.setText("Historial");
 
         jList1.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
@@ -64,16 +58,13 @@ public class HistorialPrecio extends javax.swing.JFrame implements Observer {
         });
         jScrollPane2.setViewportView(jList1);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        jLabel1.setText("Historial");
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 315, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 388, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
                 .addGap(139, 139, 139)
@@ -92,8 +83,6 @@ public class HistorialPrecio extends javax.swing.JFrame implements Observer {
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 388, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-
-        pack();
     }// </editor-fold>//GEN-END:initComponents
 
 
@@ -104,4 +93,8 @@ public class HistorialPrecio extends javax.swing.JFrame implements Observer {
     private javax.swing.JSeparator jSeparator1;
     // End of variables declaration//GEN-END:variables
 
+    @Override
+    public void operacion() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

@@ -1,36 +1,30 @@
+
 package p1_s1;
 
 import java.util.Observable;
-import java.util.Observer;
-import javax.swing.JFrame;
-import javax.swing.JTextField;
 
 /**
  * 
  * @author Raquel Molina Reche (GH: rmr00),
  * Pablo Jiménez Jiménez (GH: pablojj1808)
  */
-public class CambiadorPrecio extends javax.swing.JFrame 
-                                implements Component {
+public class CambiadorPrecio extends Component {
 
     private Ticket t;
     
     public CambiadorPrecio(Ticket t) {
         initComponents();
-        this.setTitle("Cambiador de precio (Tercer Observador)");
         this.setVisible(true);
         this.t = t;
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setLocationRelativeTo(null);
         valor.setText("");
     }
-    
+
     @Override
     public void update(Observable o, Object arg) {
         double p = (double) arg;
         valor.setText(Double.toString(p));
     }
-
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -40,8 +34,6 @@ public class CambiadorPrecio extends javax.swing.JFrame
         jLabel3 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
-
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         jLabel1.setText("Valor actual:");
@@ -63,8 +55,8 @@ public class CambiadorPrecio extends javax.swing.JFrame
             }
         });
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -84,7 +76,7 @@ public class CambiadorPrecio extends javax.swing.JFrame
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(valor))
@@ -93,11 +85,8 @@ public class CambiadorPrecio extends javax.swing.JFrame
                     .addComponent(jLabel3)
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jButton1))
         );
-
-        pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -108,7 +97,6 @@ public class CambiadorPrecio extends javax.swing.JFrame
         jTextField1.setText("");
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
@@ -120,7 +108,6 @@ public class CambiadorPrecio extends javax.swing.JFrame
 
     @Override
     public void operacion() {
-        
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
 }

@@ -12,9 +12,15 @@ public class P1_S1 {
        
        HistorialPrecio precioHistorial = new HistorialPrecio();
        PantallaPrecio precioScreen = new PantallaPrecio(t);
-       CambiadorPrecio cp = new CambiadorPrecio(t);
-       MapaPrecios mp = new MapaPrecios();
+       Component cp = new CambiadorPrecio(t);
+       Component mp = new MapaPrecios();
        
+        
+        
+        Component panelCompuesto = new PanelCompuesto(t);
+//        panelCompuesto.addComponente(cp);
+//        panelCompuesto.addComponente(mp);
+        MainWindow mw = new MainWindow(t);
        
        t.addObserver(precioHistorial);
        t.addObserver(cp);
