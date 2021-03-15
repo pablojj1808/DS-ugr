@@ -29,7 +29,7 @@ public class Principal {
        t.addObserver(panelCompuesto);
        
        
-       MainWindow vp = new MainWindow(t,precioHistorial, precioScreen,cp,mp, panelCompuesto);
+       MainWindow vp = new MainWindow(t,precioHistorial, precioScreen,cp,mp);
        
        t.start();
        precioScreen.start();
