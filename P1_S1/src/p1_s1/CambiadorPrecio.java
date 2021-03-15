@@ -8,7 +8,7 @@ import java.util.Observable;
  * @author Raquel Molina Reche (GH: rmr00),
  * Pablo Jiménez Jiménez (GH: pablojj1808)
  */
-public class CambiadorPrecio extends Component {
+public class CambiadorPrecio extends Componente {
 
     private Ticket t;
     

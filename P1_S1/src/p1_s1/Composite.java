@@ -9,9 +9,9 @@ import java.util.Observable;
  * @author Raquel Molina Reche (GH: rmr00),
  * Pablo Jiménez Jiménez (GH: pablojj1808)
  */
-public class Composite extends Component {
+public class Composite extends Componente {
     
-    protected ArrayList<Component> hijos;
+    protected ArrayList<Componente> hijos;
 
     public Composite() {
         hijos = new ArrayList<>();
@@ -19,11 +19,11 @@ public class Composite extends Component {
     
     
     
-    public void addComponente(Component a) {
+    public void addComponente(Componente a) {
         hijos.add(a);
     }
 
-    public void remove(Component a) {
+    public void remove(Componente a) {
         hijos.remove(a);
     }
 

@@ -8,7 +8,7 @@ import java.util.Observable;
  * @author Raquel Molina Reche (GH: rmr00),
  * Pablo Jiménez Jiménez (GH: pablojj1808)
  */
-public class MapaPrecios extends Component {
+public class MapaPrecios extends Componente {
 
     private static double precioCanarias;
     private static double precioPeninsular;

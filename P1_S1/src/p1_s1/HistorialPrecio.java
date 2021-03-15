@@ -8,7 +8,7 @@ import java.util.Observable;
  * @author Raquel Molina Reche (GH: rmr00),
  * Pablo Jiménez Jiménez (GH: pablojj1808)
  */
-public class HistorialPrecio extends Component {
+public class HistorialPrecio extends Componente {
 
     private static ArrayList<String> precios;
     

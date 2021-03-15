@@ -2,6 +2,7 @@
 package p1_s1;
 
 import java.awt.BorderLayout;
+import java.util.Observable;
 import javax.swing.JPanel;
 
 /**
@@ -10,24 +11,41 @@ import javax.swing.JPanel;
  * Pablo Jiménez Jiménez (GH: pablojj1808)
  */
 public class PanelCompuesto extends Composite {
+    
+    private Componente mapa;
+    private Componente cambiador;
 
     
     public PanelCompuesto(Ticket t) {
         super();
         initComponents();
-        Component cp = new CambiadorPrecio(t);
-        Component mp = new MapaPrecios();
-        cp.setVisible(true);
-        mp.setVisible(true);
         
-        jPanel2.add(cp);
+        mapa = new MapaPrecios();
+        cambiador = new CambiadorPrecio(t);
         
+        panelmapa.add(mapa);
+        panelCambiador.add(cambiador);
+       
+        //cp.setVisible(true);
+        //mp.setVisible(true);
         
-        this.hijos.add(cp);
-        this.hijos.add(mp);
+        this.hijos.add(cambiador);
+        this.hijos.add(mapa);
+        
+        panelmapa.repaint();
+        panelmapa.revalidate();
+        
+        this.repaint();
+        this.revalidate();
+        
         this.setVisible(true);
     }
     
+    @Override
+    public void update(Observable o, Object arg) {
+        mapa.update(o, arg);
+        cambiador.update(o, arg);
+    }
     
 
     
@@ -35,39 +53,41 @@ public class PanelCompuesto extends Composite {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel2 = new javax.swing.JPanel();
+        panelmapa = new javax.swing.JPanel();
+        panelCambiador = new javax.swing.JPanel();
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 477, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 460, Short.MAX_VALUE)
-        );
+        panelmapa.setLayout(new java.awt.BorderLayout());
+
+        panelCambiador.setLayout(new java.awt.BorderLayout());
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(557, 557, 557)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(31, Short.MAX_VALUE))
+                .addGap(34, 34, 34)
+                .addComponent(panelmapa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 428, Short.MAX_VALUE)
+                .addComponent(panelCambiador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(66, 66, 66))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(7, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(41, 41, 41)
+                        .addComponent(panelmapa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(69, 69, 69)
+                        .addComponent(panelCambiador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(196, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel panelCambiador;
+    private javax.swing.JPanel panelmapa;
     // End of variables declaration//GEN-END:variables
 }

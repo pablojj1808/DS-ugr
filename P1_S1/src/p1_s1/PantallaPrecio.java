@@ -8,7 +8,7 @@ import java.util.Observable;
  * @author Raquel Molina Reche (GH: rmr00),
  * Pablo Jiménez Jiménez (GH: pablojj1808)
  */
-public class PantallaPrecio extends Component implements Runnable {
+public class PantallaPrecio extends Componente implements Runnable {
 
     private Ticket t;
     private Thread miHilo;
