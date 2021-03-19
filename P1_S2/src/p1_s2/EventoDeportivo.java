@@ -6,9 +6,13 @@ package p1_s2;
  * Pablo Jiménez Jiménez (GH: pablojj1808)
  */
 public class EventoDeportivo extends Evento {
+
+    public EventoDeportivo(int ne) {
+        super(ne, "DEPORTIVO");
+    }
     
     @Override
-    void identificate() {
-        System.out.println("Soy un evento de tipo Deportivo");
+    String identificate() {
+        return nombre;
     }
 }

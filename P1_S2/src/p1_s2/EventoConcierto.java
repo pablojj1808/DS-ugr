@@ -7,9 +7,14 @@ package p1_s2;
  */
 public class EventoConcierto extends Evento {
 
+    public EventoConcierto(int ne) {
+        super(ne, "CONCIERTO");
+        
+    }
+
     @Override
-    void identificate() {
-        System.out.println("Soy un evento de tipo concierto");
+    String identificate() {
+        return nombre;
     }
     
 }
