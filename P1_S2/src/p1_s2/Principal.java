@@ -21,7 +21,7 @@ public class Principal {
         AbstractFactory afDeportivo = new FactoriaDeportiva();
         
         // 2. Creamos un cliente
-        Cliente cliente1 = new Cliente(usuarios, afConcierto);
+        Cliente cliente1 = new Cliente(afConcierto);
         
         Cliente cliente2 = new Cliente(afDeportivo);
         cliente1.hacerCosas();
