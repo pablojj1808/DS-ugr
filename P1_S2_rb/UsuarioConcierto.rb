@@ -4,8 +4,12 @@ class UsuarioConcierto < Usuario
 
     public_class_method :new 
 
-    def initialize nombre
-        super nombre, "usuario concierto"
+    def initialize
+        super "usuario concierto"
+    end
+
+    def clone
+        UsuarioConcierto.new
     end
 
 end
