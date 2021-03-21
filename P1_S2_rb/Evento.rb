@@ -1,6 +1,7 @@
+require_relative 'Cloneable.rb'
 
 class Evento
-
+    include Cloneable
     private_class_method :new 
     
     attr_reader :name, :n_entradas, :publico
@@ -17,10 +18,6 @@ class Evento
 
     def nEntradas
         @n_entradas
-    end
-
-    def clone
-        raise 'Not implemented here'
     end
 
     def empezar

@@ -1,6 +1,7 @@
+require_relative 'Cloneable.rb'
 
 class Usuario 
-
+    include Cloneable
     private_class_method :new 
 
     attr_reader :tipo, :id
@@ -12,9 +13,6 @@ class Usuario
         @@id_siguiente += 1
     end
 
-    def clone
-        raise 'Not implemented here'
-    end
 
     def to_s
         "Usuario::[#{@id}, #{@tipo}]"
