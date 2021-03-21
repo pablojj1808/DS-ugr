@@ -14,9 +14,6 @@ public class Principal {
     
     public static void main(String[] args) {
         
-        System.out.print("¿Cuántos usuarios quieres?: ");
-        int usuarios = in.nextInt();
-        
         AbstractFactory afConcierto = new FactoriaConcierto();
         AbstractFactory afDeportivo = new FactoriaDeportiva();
         

@@ -3,6 +3,7 @@ package p1_s2;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Random;
 import java.util.Set;
 
 /**
@@ -11,38 +12,31 @@ import java.util.Set;
  * Pablo Jiménez Jiménez (GH: pablojj1808)
  */
 public class Cliente {
-    
-    private final int N_USU = 4;
-    private Set<Usuario> usuarios;
     private Evento evento;
 
     
     Cliente(AbstractFactory af) {
-        this.evento  = af.crearEvento();
+        //Se generan el numero de entradas del evento aleatoriamente
+        int ne = generarNumeroEntradas();
+
+        //Se crea el evento
+        this.evento  = af.crearEvento(ne);
         
-        usuarios = new HashSet<>();
-        for(int i=0; i<N_USU; i++) {
-            usuarios.add(af.crearUsuario());
+        //Se crean tantos usuarios como entradas tenga el evento
+        for(int i=0; i<ne; i++) {
+            evento.addPublico(af.crearUsuario(i+1));
         }
-        
-        usuarios.forEach( u -> u.setEvento(this.evento) );
+    }
+    
+    public static int generarNumeroEntradas(){
+        Random rand = new Random();
+        int entradas = rand.nextInt(20)+20;
+        return  entradas;  
     }
 
-    void hacerCosas() {
-        usuarios.forEach( u -> u.start() );
-    }
-    
-    synchronized void comprarEntrada() {
-        
-//        boolean conseguido = this.evento.comprarEntrada();
-//        usuario.haConseguidoEntrada();
-    }
-    
-    void consumirEvento() {
+    void hacerCosas() {      
+        evento.start();
         
     }
-    
-    void fin() {
-        
-    }    
+
 }

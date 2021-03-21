@@ -8,12 +8,12 @@ package p1_s2;
 public class FactoriaDeportiva extends AbstractFactory {
     
     @Override
-    Evento crearEvento() {
-        return new EventoDeportivo(3);
+    Evento crearEvento(int numEntradas) {
+        return new EventoDeportivo(numEntradas);
     }
 
     @Override
-    Usuario crearUsuario() {
-        return new UsuarioDeportivo();
+    Usuario crearUsuario(int id) {
+        return new UsuarioDeportivo(id);
     }
 }

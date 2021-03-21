@@ -8,8 +8,8 @@ package p1_s2;
  */
 public class UsuarioDeportivo extends Usuario {
     
-    public UsuarioDeportivo() {
-        super();
+    public UsuarioDeportivo(int id) {
+        super(id);
     }
 
     
