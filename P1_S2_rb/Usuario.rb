@@ -3,7 +3,7 @@ class Usuario
 
     private_class_method :new 
 
-    attr_reader :name, :tipo, :id
+    attr_reader :tipo, :id
 
     @@id_siguiente = 1
     def initialize tipo

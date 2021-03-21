@@ -7,13 +7,13 @@ require_relative 'EventoDeportivo.rb'
 
 
 puts "Empieza el programa"
-MIN = 20
-MAX = 60
+MIN = 15
+MAX = 25
 usu_pt = UsuarioConcierto.new
-evt_pt = EventoConcierto.new "Concierto X", Random.new.rand(MIN)+20, []
+evt_pt = EventoConcierto.new "Concierto X", Random.new.rand(MAX)+MIN, []
 fac_c = FactoriaPrototipo.new evt_pt, usu_pt
 
-evt2_pt = EventoDeportivo.new "Deportivo Y", Random.new.rand(MIN)+20, []
+evt2_pt = EventoDeportivo.new "Deportivo Y", Random.new.rand(MAX)+MIN, []
 usu2_pt = UsuarioDeportivo.new
 fac_d = FactoriaPrototipo.new  evt2_pt, usu2_pt
 

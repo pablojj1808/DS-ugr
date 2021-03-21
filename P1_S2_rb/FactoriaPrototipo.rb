@@ -2,16 +2,16 @@ require_relative 'AbstractFactory.rb'
 class FactoriaPrototipo < AbstractFactory
 
     def initialize evento, usuario
-        @evento = evento
-        @usuario = usuario
+        @prototype_evento = evento
+        @prototype_usuario = usuario
     end
 
     def crear_usuario
-        @usuario.clone
+        @prototype_usuario.clone
     end
 
     def crear_evento
-        @evento.clone
+        @prototype_evento.clone
     end 
 
 end

@@ -1,8 +1,6 @@
 
 class Cliente
 
-    attr_reader :usuario
-
     def initialize abs_factory
         @abs_factory = abs_factory
 
