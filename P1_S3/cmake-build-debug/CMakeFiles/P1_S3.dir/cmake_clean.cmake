@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/P1_S3.dir/main.cpp.o"
-  "CMakeFiles/P1_S3.dir/src/Prueba.cpp.o"
+  "CMakeFiles/P1_S3.dir/src/Cliente.cpp.o"
+  "CMakeFiles/P1_S3.dir/src/FilterChain.cpp.o"
+  "CMakeFiles/P1_S3.dir/src/FilterManager.cpp.o"
   "P1_S3"
   "P1_S3.pdb"
 )

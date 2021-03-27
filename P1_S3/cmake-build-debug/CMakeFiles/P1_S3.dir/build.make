@@ -90,32 +90,62 @@ CMakeFiles/P1_S3.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/P1_S3.dir/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pablojj/projects/DS-ugr/P1_S3/main.cpp -o CMakeFiles/P1_S3.dir/main.cpp.s
 
-CMakeFiles/P1_S3.dir/src/Prueba.cpp.o: CMakeFiles/P1_S3.dir/flags.make
-CMakeFiles/P1_S3.dir/src/Prueba.cpp.o: ../src/Prueba.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/pablojj/projects/DS-ugr/P1_S3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/P1_S3.dir/src/Prueba.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/P1_S3.dir/src/Prueba.cpp.o -c /Users/pablojj/projects/DS-ugr/P1_S3/src/Prueba.cpp
+CMakeFiles/P1_S3.dir/src/Cliente.cpp.o: CMakeFiles/P1_S3.dir/flags.make
+CMakeFiles/P1_S3.dir/src/Cliente.cpp.o: ../src/Cliente.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/pablojj/projects/DS-ugr/P1_S3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/P1_S3.dir/src/Cliente.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/P1_S3.dir/src/Cliente.cpp.o -c /Users/pablojj/projects/DS-ugr/P1_S3/src/Cliente.cpp
 
-CMakeFiles/P1_S3.dir/src/Prueba.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/P1_S3.dir/src/Prueba.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pablojj/projects/DS-ugr/P1_S3/src/Prueba.cpp > CMakeFiles/P1_S3.dir/src/Prueba.cpp.i
+CMakeFiles/P1_S3.dir/src/Cliente.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/P1_S3.dir/src/Cliente.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pablojj/projects/DS-ugr/P1_S3/src/Cliente.cpp > CMakeFiles/P1_S3.dir/src/Cliente.cpp.i
 
-CMakeFiles/P1_S3.dir/src/Prueba.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/P1_S3.dir/src/Prueba.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pablojj/projects/DS-ugr/P1_S3/src/Prueba.cpp -o CMakeFiles/P1_S3.dir/src/Prueba.cpp.s
+CMakeFiles/P1_S3.dir/src/Cliente.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/P1_S3.dir/src/Cliente.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pablojj/projects/DS-ugr/P1_S3/src/Cliente.cpp -o CMakeFiles/P1_S3.dir/src/Cliente.cpp.s
+
+CMakeFiles/P1_S3.dir/src/FilterManager.cpp.o: CMakeFiles/P1_S3.dir/flags.make
+CMakeFiles/P1_S3.dir/src/FilterManager.cpp.o: ../src/FilterManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/pablojj/projects/DS-ugr/P1_S3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/P1_S3.dir/src/FilterManager.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/P1_S3.dir/src/FilterManager.cpp.o -c /Users/pablojj/projects/DS-ugr/P1_S3/src/FilterManager.cpp
+
+CMakeFiles/P1_S3.dir/src/FilterManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/P1_S3.dir/src/FilterManager.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pablojj/projects/DS-ugr/P1_S3/src/FilterManager.cpp > CMakeFiles/P1_S3.dir/src/FilterManager.cpp.i
+
+CMakeFiles/P1_S3.dir/src/FilterManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/P1_S3.dir/src/FilterManager.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pablojj/projects/DS-ugr/P1_S3/src/FilterManager.cpp -o CMakeFiles/P1_S3.dir/src/FilterManager.cpp.s
+
+CMakeFiles/P1_S3.dir/src/FilterChain.cpp.o: CMakeFiles/P1_S3.dir/flags.make
+CMakeFiles/P1_S3.dir/src/FilterChain.cpp.o: ../src/FilterChain.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/pablojj/projects/DS-ugr/P1_S3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/P1_S3.dir/src/FilterChain.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/P1_S3.dir/src/FilterChain.cpp.o -c /Users/pablojj/projects/DS-ugr/P1_S3/src/FilterChain.cpp
+
+CMakeFiles/P1_S3.dir/src/FilterChain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/P1_S3.dir/src/FilterChain.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/pablojj/projects/DS-ugr/P1_S3/src/FilterChain.cpp > CMakeFiles/P1_S3.dir/src/FilterChain.cpp.i
+
+CMakeFiles/P1_S3.dir/src/FilterChain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/P1_S3.dir/src/FilterChain.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/pablojj/projects/DS-ugr/P1_S3/src/FilterChain.cpp -o CMakeFiles/P1_S3.dir/src/FilterChain.cpp.s
 
 # Object files for target P1_S3
 P1_S3_OBJECTS = \
 "CMakeFiles/P1_S3.dir/main.cpp.o" \
-"CMakeFiles/P1_S3.dir/src/Prueba.cpp.o"
+"CMakeFiles/P1_S3.dir/src/Cliente.cpp.o" \
+"CMakeFiles/P1_S3.dir/src/FilterManager.cpp.o" \
+"CMakeFiles/P1_S3.dir/src/FilterChain.cpp.o"
 
 # External object files for target P1_S3
 P1_S3_EXTERNAL_OBJECTS =
 
 P1_S3: CMakeFiles/P1_S3.dir/main.cpp.o
-P1_S3: CMakeFiles/P1_S3.dir/src/Prueba.cpp.o
+P1_S3: CMakeFiles/P1_S3.dir/src/Cliente.cpp.o
+P1_S3: CMakeFiles/P1_S3.dir/src/FilterManager.cpp.o
+P1_S3: CMakeFiles/P1_S3.dir/src/FilterChain.cpp.o
 P1_S3: CMakeFiles/P1_S3.dir/build.make
 P1_S3: CMakeFiles/P1_S3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/pablojj/projects/DS-ugr/P1_S3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable P1_S3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/pablojj/projects/DS-ugr/P1_S3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable P1_S3"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/P1_S3.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

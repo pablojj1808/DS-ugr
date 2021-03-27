@@ -6,11 +6,41 @@
 
 #IncludeRegexTransform: 
 
-/Users/pablojj/projects/DS-ugr/P1_S3/include/Prueba.h
+../include/Cliente.h
+memory
+-
+FilterManager.h
+../include/FilterManager.h
+
+../include/Filter.h
+
+../include/FilterChain.h
+Filter.h
+../include/Filter.h
+list
+-
+
+../include/FilterManager.h
+memory
+-
+FilterChain.h
+../include/FilterChain.h
 
 /Users/pablojj/projects/DS-ugr/P1_S3/main.cpp
 iostream
 -
-include/Prueba.h
-/Users/pablojj/projects/DS-ugr/P1_S3/include/Prueba.h
+memory
+-
+
+/Users/pablojj/projects/DS-ugr/P1_S3/src/Cliente.cpp
+Cliente.h
+/Users/pablojj/projects/DS-ugr/P1_S3/src/Cliente.h
+
+/Users/pablojj/projects/DS-ugr/P1_S3/src/FilterChain.cpp
+FilterChain.h
+/Users/pablojj/projects/DS-ugr/P1_S3/src/FilterChain.h
+
+/Users/pablojj/projects/DS-ugr/P1_S3/src/FilterManager.cpp
+FilterManager.h
+/Users/pablojj/projects/DS-ugr/P1_S3/src/FilterManager.h
 

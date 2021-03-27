@@ -170,32 +170,86 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_S3.dir/build.make CMakeFiles/P1_S3.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/Prueba.o: src/Prueba.cpp.o
+src/Cliente.o: src/Cliente.cpp.o
 
-.PHONY : src/Prueba.o
+.PHONY : src/Cliente.o
 
 # target to build an object file
-src/Prueba.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_S3.dir/build.make CMakeFiles/P1_S3.dir/src/Prueba.cpp.o
-.PHONY : src/Prueba.cpp.o
+src/Cliente.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_S3.dir/build.make CMakeFiles/P1_S3.dir/src/Cliente.cpp.o
+.PHONY : src/Cliente.cpp.o
 
-src/Prueba.i: src/Prueba.cpp.i
+src/Cliente.i: src/Cliente.cpp.i
 
-.PHONY : src/Prueba.i
+.PHONY : src/Cliente.i
 
 # target to preprocess a source file
-src/Prueba.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_S3.dir/build.make CMakeFiles/P1_S3.dir/src/Prueba.cpp.i
-.PHONY : src/Prueba.cpp.i
+src/Cliente.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_S3.dir/build.make CMakeFiles/P1_S3.dir/src/Cliente.cpp.i
+.PHONY : src/Cliente.cpp.i
 
-src/Prueba.s: src/Prueba.cpp.s
+src/Cliente.s: src/Cliente.cpp.s
 
-.PHONY : src/Prueba.s
+.PHONY : src/Cliente.s
 
 # target to generate assembly for a file
-src/Prueba.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_S3.dir/build.make CMakeFiles/P1_S3.dir/src/Prueba.cpp.s
-.PHONY : src/Prueba.cpp.s
+src/Cliente.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_S3.dir/build.make CMakeFiles/P1_S3.dir/src/Cliente.cpp.s
+.PHONY : src/Cliente.cpp.s
+
+src/FilterChain.o: src/FilterChain.cpp.o
+
+.PHONY : src/FilterChain.o
+
+# target to build an object file
+src/FilterChain.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_S3.dir/build.make CMakeFiles/P1_S3.dir/src/FilterChain.cpp.o
+.PHONY : src/FilterChain.cpp.o
+
+src/FilterChain.i: src/FilterChain.cpp.i
+
+.PHONY : src/FilterChain.i
+
+# target to preprocess a source file
+src/FilterChain.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_S3.dir/build.make CMakeFiles/P1_S3.dir/src/FilterChain.cpp.i
+.PHONY : src/FilterChain.cpp.i
+
+src/FilterChain.s: src/FilterChain.cpp.s
+
+.PHONY : src/FilterChain.s
+
+# target to generate assembly for a file
+src/FilterChain.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_S3.dir/build.make CMakeFiles/P1_S3.dir/src/FilterChain.cpp.s
+.PHONY : src/FilterChain.cpp.s
+
+src/FilterManager.o: src/FilterManager.cpp.o
+
+.PHONY : src/FilterManager.o
+
+# target to build an object file
+src/FilterManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_S3.dir/build.make CMakeFiles/P1_S3.dir/src/FilterManager.cpp.o
+.PHONY : src/FilterManager.cpp.o
+
+src/FilterManager.i: src/FilterManager.cpp.i
+
+.PHONY : src/FilterManager.i
+
+# target to preprocess a source file
+src/FilterManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_S3.dir/build.make CMakeFiles/P1_S3.dir/src/FilterManager.cpp.i
+.PHONY : src/FilterManager.cpp.i
+
+src/FilterManager.s: src/FilterManager.cpp.s
+
+.PHONY : src/FilterManager.s
+
+# target to generate assembly for a file
+src/FilterManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_S3.dir/build.make CMakeFiles/P1_S3.dir/src/FilterManager.cpp.s
+.PHONY : src/FilterManager.cpp.s
 
 # Help Target
 help:
@@ -209,9 +263,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/Prueba.o"
-	@echo "... src/Prueba.i"
-	@echo "... src/Prueba.s"
+	@echo "... src/Cliente.o"
+	@echo "... src/Cliente.i"
+	@echo "... src/Cliente.s"
+	@echo "... src/FilterChain.o"
+	@echo "... src/FilterChain.i"
+	@echo "... src/FilterChain.s"
+	@echo "... src/FilterManager.o"
+	@echo "... src/FilterManager.i"
+	@echo "... src/FilterManager.s"
 .PHONY : help
 
 

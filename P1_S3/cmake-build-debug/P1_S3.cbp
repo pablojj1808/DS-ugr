@@ -82,13 +82,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/pablojj/projects/DS-ugr/P1_S3/include/Prueba.h">
+		<Unit filename="/Users/pablojj/projects/DS-ugr/P1_S3/include/Cliente.h">
+			<Option target="P1_S3"/>
+		</Unit>
+		<Unit filename="/Users/pablojj/projects/DS-ugr/P1_S3/include/Filter.h">
+			<Option target="P1_S3"/>
+		</Unit>
+		<Unit filename="/Users/pablojj/projects/DS-ugr/P1_S3/include/FilterChain.h">
+			<Option target="P1_S3"/>
+		</Unit>
+		<Unit filename="/Users/pablojj/projects/DS-ugr/P1_S3/include/FilterManager.h">
 			<Option target="P1_S3"/>
 		</Unit>
 		<Unit filename="/Users/pablojj/projects/DS-ugr/P1_S3/main.cpp">
 			<Option target="P1_S3"/>
 		</Unit>
-		<Unit filename="/Users/pablojj/projects/DS-ugr/P1_S3/src/Prueba.cpp">
+		<Unit filename="/Users/pablojj/projects/DS-ugr/P1_S3/src/Cliente.cpp">
+			<Option target="P1_S3"/>
+		</Unit>
+		<Unit filename="/Users/pablojj/projects/DS-ugr/P1_S3/src/FilterChain.cpp">
+			<Option target="P1_S3"/>
+		</Unit>
+		<Unit filename="/Users/pablojj/projects/DS-ugr/P1_S3/src/FilterManager.cpp">
 			<Option target="P1_S3"/>
 		</Unit>
 		<Unit filename="/Users/pablojj/projects/DS-ugr/P1_S3/CMakeLists.txt">
