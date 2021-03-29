@@ -1,17 +1,12 @@
-//
-// Created by Pablo Jj on 24/3/21.
-//
 
+#include <iostream>
 #include "Cliente.h"
 
-Cliente::Cliente() {
-    this->fmanager = std::unique_ptr<FilterManager>();
+void Cliente::setFilterManager(FilterManager* fm) {
+    this->fmanager = std::unique_ptr<FilterManager>(fm);
 }
 
-void Cliente::setFilterManager(const FilterManager & fm) {
-    this->fmanager.get() 0 fm;
-}
+void Cliente::sendRequest(double& precio) {
 
-void Cliente::sendRequest() {
-
+    this->fmanager->filterRequest(precio);
 }

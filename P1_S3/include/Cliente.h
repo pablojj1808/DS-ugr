@@ -1,7 +1,3 @@
-//
-// Created by Pablo Jj on 24/3/21.
-//
-
 #ifndef P1_S3_CLIENTE_H
 #define P1_S3_CLIENTE_H
 
@@ -13,11 +9,11 @@ class Cliente {
     std::unique_ptr<FilterManager> fmanager;
 
 public:
-    Cliente();
+    Cliente() = default;
 
-    void setFilterManager(const FilterManager & fm);
+    void setFilterManager(FilterManager * fm);
 
-    void sendRequest();
+    void sendRequest(double& precio);
 
 };
 

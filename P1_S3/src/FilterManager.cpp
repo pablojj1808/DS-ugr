@@ -1,17 +1,18 @@
-//
-// Created by Pablo Jj on 24/3/21.
-//
-
+#include <iostream>
 #include "FilterManager.h"
 
-FilterManager::FilterManager(const Target & t) {
-    this->filterChain = std::unique_ptr<FilterChain>(t);
+FilterManager::FilterManager(Target*  t) {
+    this->target = std::unique_ptr<Target>(t);
+
 }
 
-void FilterManager::addFilter(const Filter & f) {
-    this->filterChain->addFilter(f);
+void FilterManager::addFilter(Filter* & f) {
+    this->filterChain.addFilter(f);
 }
 
-void FilterManager::filterRequest() {
-    this->filterChain->execute();
+void FilterManager::filterRequest(double& precio) {
+std::cout << "antes\n";
+    this->filterChain.execute(precio);
+    std::cout << "despues\n";
+    this->target->execute(precio);
 }

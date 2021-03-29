@@ -1,28 +1,24 @@
 #include <iostream>
 #include <memory>
+#include "IVAFilter.h"
+#include "FilterManager.h"
+#include "Cliente.h"
 using namespace std;
-struct PER {
-    string nombre;
-    PER(string s) {
-        nombre = s;
-    }
-};
+
 int main() {
-/*
-    unique_ptr<PER> pablo(new PER("Pablo"));
 
-    cout << pablo->nombre << endl;
+    FilterManager* fm = new FilterManager(new Target());
+    Filter* iva = new IVAFilter();
 
-    unique_ptr<PER> ana(new PER("Ana"));
+    fm->addFilter(iva);
 
-    pablo.swap(ana);
 
-    cout << pablo->nombre << endl;*/
+    Cliente cliente;
 
-    double a = 23.897;
-    float b = a;
+    cliente.setFilterManager(fm);
 
-    cout << b << endl;
+    double p = 18.5;
+    cliente.sendRequest(p);
 
     return 0;
 }

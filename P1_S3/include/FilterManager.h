@@ -1,6 +1,3 @@
-//
-// Created by Pablo Jj on 24/3/21.
-//
 
 #ifndef P1_S3_FILTERMANAGER_H
 #define P1_S3_FILTERMANAGER_H
@@ -9,14 +6,16 @@
 #include "FilterChain.h"
 
 class FilterManager {
-    std::unique_ptr<FilterChain> filterChain;
+
+    FilterChain filterChain;
+    std::unique_ptr<Target> target;
 
 public:
-    FilterManager(const Target & t);
+    FilterManager(Target* t);
 
-    void addFilter(const Filter & f);
+    void addFilter(Filter* & f);
 
-    void filterRequest();
+    void filterRequest(double& precio);
 };
 
 

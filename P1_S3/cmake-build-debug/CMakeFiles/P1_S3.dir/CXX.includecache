@@ -15,6 +15,8 @@ FilterManager.h
 ../include/Filter.h
 
 ../include/FilterChain.h
+Target.h
+../include/Target.h
 Filter.h
 ../include/Filter.h
 list
@@ -26,21 +28,11 @@ memory
 FilterChain.h
 ../include/FilterChain.h
 
-/Users/pablojj/projects/DS-ugr/P1_S3/main.cpp
-iostream
--
-memory
--
+../include/Target.h
 
 /Users/pablojj/projects/DS-ugr/P1_S3/src/Cliente.cpp
+iostream
+-
 Cliente.h
 /Users/pablojj/projects/DS-ugr/P1_S3/src/Cliente.h
-
-/Users/pablojj/projects/DS-ugr/P1_S3/src/FilterChain.cpp
-FilterChain.h
-/Users/pablojj/projects/DS-ugr/P1_S3/src/FilterChain.h
-
-/Users/pablojj/projects/DS-ugr/P1_S3/src/FilterManager.cpp
-FilterManager.h
-/Users/pablojj/projects/DS-ugr/P1_S3/src/FilterManager.h
 

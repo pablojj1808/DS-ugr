@@ -1,23 +1,18 @@
-//
-// Created by Pablo Jj on 24/3/21.
-//
-
 #include "FilterChain.h"
-FilterChain::FilterChain(const Target & t) {
-    this->target = t;
-    this->filters = std::list<Filter>();
+#include <iostream>
+FilterChain::FilterChain() {
+    this->filters = std::list<Filter*>();
 }
 
-void FilterChain::addFilter(const Filter & f) {
+void FilterChain::addFilter(Filter* & f) {
     this->filters.push_back(f);
 }
 
-void FilterChain::execute() {
-    for(Filter & f : filters) {
-        f.execute();
-    }
-}
+void FilterChain::execute(double& precio) {
+    std::cout << "---\n";
+    std::cout << filters.size() << std::endl;
+    for(std::list<Filter*>::iterator it = filters.begin(); it!=filters.end(); ++it) {
 
-void FilterChain::setTarget(const Target & t) {
-    this->target = target;
+        (*it)->execute(precio);
+    }
 }

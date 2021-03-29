@@ -94,6 +94,12 @@
 		<Unit filename="/Users/pablojj/projects/DS-ugr/P1_S3/include/FilterManager.h">
 			<Option target="P1_S3"/>
 		</Unit>
+		<Unit filename="/Users/pablojj/projects/DS-ugr/P1_S3/include/IVAFilter.h">
+			<Option target="P1_S3"/>
+		</Unit>
+		<Unit filename="/Users/pablojj/projects/DS-ugr/P1_S3/include/Target.h">
+			<Option target="P1_S3"/>
+		</Unit>
 		<Unit filename="/Users/pablojj/projects/DS-ugr/P1_S3/main.cpp">
 			<Option target="P1_S3"/>
 		</Unit>
@@ -104,6 +110,12 @@
 			<Option target="P1_S3"/>
 		</Unit>
 		<Unit filename="/Users/pablojj/projects/DS-ugr/P1_S3/src/FilterManager.cpp">
+			<Option target="P1_S3"/>
+		</Unit>
+		<Unit filename="/Users/pablojj/projects/DS-ugr/P1_S3/src/IVAFilter.cpp">
+			<Option target="P1_S3"/>
+		</Unit>
+		<Unit filename="/Users/pablojj/projects/DS-ugr/P1_S3/src/Target.cpp">
 			<Option target="P1_S3"/>
 		</Unit>
 		<Unit filename="/Users/pablojj/projects/DS-ugr/P1_S3/CMakeLists.txt">

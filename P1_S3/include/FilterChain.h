@@ -1,22 +1,18 @@
-//
-// Created by Pablo Jj on 24/3/21.
-//
-
 #ifndef P1_S3_FILTERCHAIN_H
 #define P1_S3_FILTERCHAIN_H
 
+#include "Target.h"
 #include "Filter.h"
 #include <list>
 
 class FilterChain {
-    std::list<Filter> filters;
-    std::unique_ptr<Target> target;
+    std::list<Filter*> filters;
 
 public:
-    FilterChain(const Target & t);
-    void addFilter(const Filter & f);
-    void execute();
-    void setTarget(const Target & t);
+    FilterChain();
+    void addFilter(Filter* & f);
+    void execute(double& precio);
+
 };
 
 

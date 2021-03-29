@@ -251,6 +251,60 @@ src/FilterManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_S3.dir/build.make CMakeFiles/P1_S3.dir/src/FilterManager.cpp.s
 .PHONY : src/FilterManager.cpp.s
 
+src/IVAFilter.o: src/IVAFilter.cpp.o
+
+.PHONY : src/IVAFilter.o
+
+# target to build an object file
+src/IVAFilter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_S3.dir/build.make CMakeFiles/P1_S3.dir/src/IVAFilter.cpp.o
+.PHONY : src/IVAFilter.cpp.o
+
+src/IVAFilter.i: src/IVAFilter.cpp.i
+
+.PHONY : src/IVAFilter.i
+
+# target to preprocess a source file
+src/IVAFilter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_S3.dir/build.make CMakeFiles/P1_S3.dir/src/IVAFilter.cpp.i
+.PHONY : src/IVAFilter.cpp.i
+
+src/IVAFilter.s: src/IVAFilter.cpp.s
+
+.PHONY : src/IVAFilter.s
+
+# target to generate assembly for a file
+src/IVAFilter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_S3.dir/build.make CMakeFiles/P1_S3.dir/src/IVAFilter.cpp.s
+.PHONY : src/IVAFilter.cpp.s
+
+src/Target.o: src/Target.cpp.o
+
+.PHONY : src/Target.o
+
+# target to build an object file
+src/Target.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_S3.dir/build.make CMakeFiles/P1_S3.dir/src/Target.cpp.o
+.PHONY : src/Target.cpp.o
+
+src/Target.i: src/Target.cpp.i
+
+.PHONY : src/Target.i
+
+# target to preprocess a source file
+src/Target.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_S3.dir/build.make CMakeFiles/P1_S3.dir/src/Target.cpp.i
+.PHONY : src/Target.cpp.i
+
+src/Target.s: src/Target.cpp.s
+
+.PHONY : src/Target.s
+
+# target to generate assembly for a file
+src/Target.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/P1_S3.dir/build.make CMakeFiles/P1_S3.dir/src/Target.cpp.s
+.PHONY : src/Target.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -272,6 +326,12 @@ help:
 	@echo "... src/FilterManager.o"
 	@echo "... src/FilterManager.i"
 	@echo "... src/FilterManager.s"
+	@echo "... src/IVAFilter.o"
+	@echo "... src/IVAFilter.i"
+	@echo "... src/IVAFilter.s"
+	@echo "... src/Target.o"
+	@echo "... src/Target.i"
+	@echo "... src/Target.s"
 .PHONY : help
 
 
