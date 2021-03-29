@@ -1,16 +1,17 @@
+import 'Aleatorio.dart';
 import 'Target.dart';
 import 'Filter.dart';
 
-class IVAFilter implements Filter{
+class IVAFilter extends Filter with Aleatorio {
 
   execute(Target t){
 
-    double iva = aletorio(3,30);
+    double iva = aleatorio(3,30);
 
-    String a = 'Aplicando filtro de IVA ' + toString(iva) + '%';
+    String a = 'Aplicando filtro de IVA ' + iva.toStringAsFixed(4) +'%';
 
     t.addLog(a);
-    t.setPrecio(t.precio + t.precio * iva/100);
+    t.precio = t.precio + t.precio * iva/100;
 
   }
 
