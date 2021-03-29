@@ -6,9 +6,7 @@
 #include "Filter.h"
 
 class IVAFilter : public Filter {
-    double por;
 public:
-    IVAFilter() : por(0.21) { }
     void execute(Target&);
 };
 

@@ -1,9 +1,11 @@
 #include "color.h"
 #include "IVAFilter.h"
-#include <iostream>
+#include <string>
 using namespace std;
 
 void IVAFilter::execute(Target& t) {
-    cout << KCYN << "aplicando filtro IVA..." << RST << endl;
-    t.setPrecio( t.getPrecio() - t.getPrecio() * por );
+    double iva = Filter::aleatorio(3, 30);
+    string a = "Aplicando filtro de IVA " + to_string(iva) + "%";
+    t.addLog(a);
+    t.setPrecio( t.getPrecio() + t.getPrecio() * iva/100 );
 }

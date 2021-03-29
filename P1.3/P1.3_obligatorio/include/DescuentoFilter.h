@@ -6,10 +6,7 @@
 #include "Target.h"
 
 class DescuentoFilter : public Filter {
-    double descuento;
-
 public:
-    DescuentoFilter() : descuento(0.1) { }
     void execute(Target& t);
 };
 

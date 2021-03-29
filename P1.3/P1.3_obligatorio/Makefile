@@ -1,9 +1,9 @@
 CXX	     := -g++
-CXXFLAGS := -std=c++11 -Wall -Wextra -Werror
+CXXFLAGS := -std=c++17 -Wall -Wextra -Werror
 LDFLAGS	 := -lstdc++ -lm
 BUILD 	 := ./
-OBJ_DIR  := $(BUILD)/obj
-APP_DIR  := $(BUILD)/
+OBJ_DIR  := $(BUILD)obj
+APP_DIR  := $(BUILD)
 TARGET   := app
 INCLUDE  := -Iinclude/
 SRC			 := $(wildcard src/*.cpp)

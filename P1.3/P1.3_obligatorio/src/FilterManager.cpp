@@ -1,4 +1,4 @@
-#include <iostream>
+
 #include "FilterManager.h"
 
 FilterManager::FilterManager(Target*  t) {
