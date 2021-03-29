@@ -39,4 +39,4 @@ clean:
 	-@rm -rvf ./app
 
 run:
-		@( ./$(BUILD)/$(TARGET) )
+	@( ./$(BUILD)/$(TARGET) )
