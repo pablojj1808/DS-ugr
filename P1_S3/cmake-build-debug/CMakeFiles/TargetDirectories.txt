@@ -1,3 +1,0 @@
-/Users/pablojj/projects/DS-ugr/P1_S3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/pablojj/projects/DS-ugr/P1_S3/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/pablojj/projects/DS-ugr/P1_S3/cmake-build-debug/CMakeFiles/P1_S3.dir
