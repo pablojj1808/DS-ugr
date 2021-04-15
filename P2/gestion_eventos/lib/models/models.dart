@@ -42,20 +42,15 @@ class EventosSet {
   }*/
 
   EventosSet() {
-    _cargarDatos();
+    this._eventos = [];
   }
 
-  _cargarDatos() async {
+  Future<List<Evento>> cargarDatos() async {
+    print('cargand datos...');
     var txt = await rootBundle.loadString('assets/data/eventos.json');
     var json = jsonDecode(txt);
     _eventos = List<Evento>.from(json.map((model)=> Evento.fromJSON(model)));
-  }
-
-  EventosSet.Provisional() {
-    _eventos =  [
-      Evento("name A", "_ubicacion", 900),
-      Evento("name B", "_ubicacion 2", 2900),
-    ];
+    return _eventos;
   }
 
   get eventos => _eventos;

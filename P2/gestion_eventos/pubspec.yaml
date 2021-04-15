@@ -25,4 +25,5 @@ flutter:
 
   assets:
     - assets/img/90.jpg
+    - assets/img/header.png
     - assets/data/eventos.json

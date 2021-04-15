@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart' show rootBundle;
 import 'package:gestion_eventos/routes/routes.dart';
 
 /// Clase sin estado encargada de crear el menú lateral con los submenus y su
@@ -36,7 +35,7 @@ class MenuLateral extends StatelessWidget {
         margin: EdgeInsets.zero,
         padding: EdgeInsets.zero,
         decoration: BoxDecoration(
-            image: DecorationImage(fit: BoxFit.fill, image: AssetImage('assets/img/90.jpg'))),
+            image: DecorationImage(fit: BoxFit.fill, image: AssetImage('assets/img/header.png'))),
         child: Stack(children: <Widget>[
           Positioned(
               bottom: 12.0,
@@ -44,7 +43,7 @@ class MenuLateral extends StatelessWidget {
               child: Text("Ana Orion",
                   style: TextStyle(
                       color: Colors.white,
-                      fontSize: 20.0,
+                      fontSize: 30.0,
                       fontWeight: FontWeight.w500))),
         ]));
   }
