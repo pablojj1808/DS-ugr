@@ -17,7 +17,6 @@ abstract class Builder {
   Widget getBuilt();
 }
 
-
 class PageHomeBuilder implements Builder {
   @override
   Widget menuLateral, frame, built, body;

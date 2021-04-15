@@ -18,7 +18,7 @@ class MenuLateral extends StatelessWidget {
             padding: EdgeInsets.only(bottom: 38.0),
           ),
           _createItem(Icons.home, 'Inicio',
-                  () => Navigator.popUntil(context, ModalRoute.withName(Routes.home))),
+                  () => Navigator.pushReplacementNamed(context, Routes.home)),
           _createItem(Icons.history, 'Historial',
               () => Navigator.pushReplacementNamed(context, Routes.historial)),
           _createItem(Icons.account_balance_wallet, 'Gastos',

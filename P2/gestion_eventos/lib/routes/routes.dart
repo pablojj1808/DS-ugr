@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gestion_eventos/pages/factoryPages.dart';
+import 'package:gestion_eventos/pages/builderPages.dart';
 import 'package:gestion_eventos/pages/gatosPage.dart';
 import 'package:gestion_eventos/pages/homePage.dart';
 
@@ -14,7 +14,7 @@ class Routes {
 
   static Map<String, WidgetBuilder> obtenerRutas() {
     return {
-      //home  : (context) => _d.constructPage(new PageHomeBuilder()),
+      home  : (context) => _d.constructPage(new PageHomeBuilder()),
       gastos: (context) => _d.constructPage(new PageGastosBuilder()),
       
     };

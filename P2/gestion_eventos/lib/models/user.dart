@@ -2,9 +2,18 @@
 class Eventos {
   String name;
   Eventos(this.name);
+  List<Valoracion> _valoraciones;
 }
 
-class User {
+enum Puntuacion {BAJA, MEDIA, ALTA};
+
+class Valoracion {
+  String comentario;
+  Puntuacion puntos;
+  Usuario escritor;
+}
+
+class Usuario {
   Map<String, double> _descuentos;
   String _name;
   String _descripcion;
@@ -12,7 +21,8 @@ class User {
   int _age;
   List<Eventos> _visitados;
 
-  User(Map<String, dynamic> json) {
+
+  Usuario(Map<String, dynamic> json) {
     this._name = json['nombre'];
     this._email = json['email'];
     this._descripcion = json['descripcion'];

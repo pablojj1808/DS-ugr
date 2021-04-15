@@ -13,12 +13,7 @@ class BasicFrame extends StatelessWidget {
     return MaterialApp(
       title: 'Gestión Eventos',
       home: _content,
-      initialRoute: HomePage.routeName,
       routes: Routes.obtenerRutas(),
-      theme: new ThemeData(
-        primarySwatch: Colors.orange,
-        brightness: Brightness.light,
-      ),
     );
   }
 }

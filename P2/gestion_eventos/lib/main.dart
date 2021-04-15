@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'widgets/gastosWidget.dart';
-import 'pages/factoryPages.dart';
+import 'pages/builderPages.dart';
 
 
 void main() {
