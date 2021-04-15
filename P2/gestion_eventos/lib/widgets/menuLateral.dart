@@ -32,37 +32,21 @@ class MenuLateral extends StatelessWidget {
   }
 
   Widget _createHeader(BuildContext context) {
-    return FutureBuilder(
-        future: rootBundle.loadString('assets/img/90.jpg'),
-        builder: (context, AsyncSnapshot<String> snap) {
-          if (snap.hasError) {
-            return Center(
-              child: Text('ERROR: ${snap.error.toString()}'),
-            );
-          }
-          if (!snap.hasData) {
-            return Center(
-              child: CircularProgressIndicator(),
-            );
-          }
-
-          return DrawerHeader(
-              margin: EdgeInsets.zero,
-              padding: EdgeInsets.zero,
-              decoration: BoxDecoration(
-                  image: DecorationImage(
-                      fit: BoxFit.fill, image: AssetImage(snap.data))),
-              child: Stack(children: <Widget>[
-                Positioned(
-                    bottom: 12.0,
-                    left: 16.0,
-                    child: Text("Ana Orion",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20.0,
-                            fontWeight: FontWeight.w500))),
-              ]));
-        });
+    return DrawerHeader(
+        margin: EdgeInsets.zero,
+        padding: EdgeInsets.zero,
+        decoration: BoxDecoration(
+            image: DecorationImage(fit: BoxFit.fill, image: AssetImage('assets/img/90.jpg'))),
+        child: Stack(children: <Widget>[
+          Positioned(
+              bottom: 12.0,
+              left: 16.0,
+              child: Text("Ana Orion",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.w500))),
+        ]));
   }
 
   _createItem(IconData icon, String text, GestureTapCallback onTap) {
