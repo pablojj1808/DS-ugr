@@ -3,8 +3,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gestion_eventos/pages/basicFrame.dart';
 import 'package:gestion_eventos/pages/gatosPage.dart';
+import 'package:gestion_eventos/pages/historialPage.dart';
 import 'package:gestion_eventos/pages/homePage.dart';
 import 'package:gestion_eventos/widgets/gastosWidget.dart';
+import 'package:gestion_eventos/widgets/historialWidget.dart';
 import 'package:gestion_eventos/widgets/homePageWidget.dart';
 import 'package:gestion_eventos/widgets/menuLateral.dart';
 
@@ -47,6 +49,29 @@ class PageGastosBuilder implements Builder {
   @override
   void crearBody() {
     body = new GastosPage(Builder.menuLateral, new GastosWidget());
+  }
+
+  @override
+  void crearFrame() {
+    frame = new BasicFrame(
+        body
+    );
+  }
+
+  @override
+  Widget getBuilt() {
+    return frame;
+  }
+
+}
+
+class PageHistoryBuilder implements Builder {
+  @override
+  Widget body, built, frame;
+
+  @override
+  void crearBody() {
+    body = new HistorialPage(Builder.menuLateral, new HistorialWidget());
   }
 
   @override

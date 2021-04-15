@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart' show rootBundle;
 import 'package:gestion_eventos/routes/routes.dart';
 
 /// Clase sin estado encargada de crear el menú lateral con los submenus y su
@@ -13,12 +14,12 @@ class MenuLateral extends StatelessWidget {
         // Important: Remove any padding from the ListView.
         padding: EdgeInsets.zero,
         children: <Widget>[
-          _createHeader(),
+          _createHeader(context),
           Container(
             padding: EdgeInsets.only(bottom: 38.0),
           ),
           _createItem(Icons.home, 'Inicio',
-                  () => Navigator.pushReplacementNamed(context, Routes.home)),
+              () => Navigator.pushReplacementNamed(context, Routes.home)),
           _createItem(Icons.history, 'Historial',
               () => Navigator.pushReplacementNamed(context, Routes.historial)),
           _createItem(Icons.account_balance_wallet, 'Gastos',
@@ -30,23 +31,38 @@ class MenuLateral extends StatelessWidget {
     );
   }
 
-  Widget _createHeader() {
-    return DrawerHeader(
-        margin: EdgeInsets.zero,
-        padding: EdgeInsets.zero,
-        decoration: BoxDecoration(
-            image: DecorationImage(
-                fit: BoxFit.fill, image: AssetImage('img/90.jpg'))),
-        child: Stack(children: <Widget>[
-          Positioned(
-              bottom: 12.0,
-              left: 16.0,
-              child: Text("Ana Orion",
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20.0,
-                      fontWeight: FontWeight.w500))),
-        ]));
+  Widget _createHeader(BuildContext context) {
+    return FutureBuilder(
+        future: rootBundle.loadString('assets/img/90.jpg'),
+        builder: (context, AsyncSnapshot<String> snap) {
+          if (snap.hasError) {
+            return Center(
+              child: Text('ERROR: ${snap.error.toString()}'),
+            );
+          }
+          if (!snap.hasData) {
+            return Center(
+              child: CircularProgressIndicator(),
+            );
+          }
+
+          return DrawerHeader(
+              margin: EdgeInsets.zero,
+              padding: EdgeInsets.zero,
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                      fit: BoxFit.fill, image: AssetImage(snap.data))),
+              child: Stack(children: <Widget>[
+                Positioned(
+                    bottom: 12.0,
+                    left: 16.0,
+                    child: Text("Ana Orion",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20.0,
+                            fontWeight: FontWeight.w500))),
+              ]));
+        });
   }
 
   _createItem(IconData icon, String text, GestureTapCallback onTap) {

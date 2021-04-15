@@ -24,4 +24,5 @@ flutter:
 
 
   assets:
-     - assets/img/
+    - assets/img/90.jpg
+    - assets/data/eventos.json
