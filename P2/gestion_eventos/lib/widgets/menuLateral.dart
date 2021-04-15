@@ -7,6 +7,7 @@ import 'package:gestion_eventos/routes/routes.dart';
 class MenuLateral extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    print('Se construye el menú lateral');
     return Drawer(
       child: ListView(
         // Important: Remove any padding from the ListView.
@@ -16,12 +17,14 @@ class MenuLateral extends StatelessWidget {
           Container(
             padding: EdgeInsets.only(bottom: 38.0),
           ),
+          _createItem(Icons.home, 'Inicio',
+                  () => Navigator.popUntil(context, ModalRoute.withName(Routes.home))),
           _createItem(Icons.history, 'Historial',
-              () => Navigator.pushNamed(context, Routes.historial)),
+              () => Navigator.pushReplacementNamed(context, Routes.historial)),
           _createItem(Icons.account_balance_wallet, 'Gastos',
-              () => Navigator.pushNamed(context, Routes.gastos)),
+              () => Navigator.pushReplacementNamed(context, Routes.gastos)),
           _createItem(Icons.where_to_vote, 'Sitios',
-              () => Navigator.pushNamed(context, Routes.ubicacion)),
+              () => Navigator.pushReplacementNamed(context, Routes.ubicacion)),
         ],
       ),
     );
