@@ -1,0 +1,149 @@
+[
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Lugo",
+    "precio": 119.541830,
+    "plazas": 191221,
+    "fecha": "2020-10-06"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Zamora",
+    "precio": 48.792784,
+    "plazas": 225376,
+    "fecha": "2020-02-19"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Albacete",
+    "precio": 54.852176,
+    "plazas": 42607,
+    "fecha": "2021-05-07"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Cuenca",
+    "precio": 173.859921,
+    "plazas": 278385,
+    "fecha": "2020-10-19"
+  },
+  {
+    "nombre": "Platinum PlashSaveStar",
+    "ubicacion": "Asturias",
+    "precio": 178.088315,
+    "plazas": 24526,
+    "fecha": "2021-05-09"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Navarra",
+    "precio": 166.271853,
+    "plazas": 66501,
+    "fecha": "2021-03-03"
+  },
+  {
+    "nombre": "Xanadu Plash",
+    "ubicacion": "Teruel",
+    "precio": 125.759489,
+    "plazas": 247850,
+    "fecha": "2021-05-09"
+  },
+  {
+    "nombre": "Plaopedia",
+    "ubicacion": "Burgos",
+    "precio": 92.868772,
+    "plazas": 92329,
+    "fecha": "2021-01-12"
+  },
+  {
+    "nombre": "Platinum PlashSaveStar",
+    "ubicacion": "Guipúzcoa",
+    "precio": 166.927004,
+    "plazas": 184214,
+    "fecha": "2020-12-31"
+  },
+  {
+    "nombre": "PlaoryxSaveStar",
+    "ubicacion": "Las Palmas",
+    "precio": 158.582429,
+    "plazas": 269499,
+    "fecha": "2020-08-23"
+  },
+  {
+    "nombre": "Plaegy",
+    "ubicacion": "Almería",
+    "precio": 83.000927,
+    "plazas": 136145,
+    "fecha": "2021-02-07"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Huelva",
+    "precio": 130.339250,
+    "plazas": 6785,
+    "fecha": "2021-04-03"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Granada",
+    "precio": 158.184828,
+    "plazas": 227140,
+    "fecha": "2020-07-24"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Sevilla",
+    "precio": 188.691772,
+    "plazas": 299339,
+    "fecha": "2020-10-25"
+  },
+  {
+    "nombre": "Interact Plash",
+    "ubicacion": "Badajoz",
+    "precio": 51.677932,
+    "plazas": 119129,
+    "fecha": "2020-09-25"
+  },
+  {
+    "nombre": "PlaoryxSaveStar",
+    "ubicacion": "Barcelona",
+    "precio": 196.266608,
+    "plazas": 254331,
+    "fecha": "2021-05-09"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Huelva",
+    "precio": 51.844264,
+    "plazas": 206627,
+    "fecha": "2020-08-14"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Alava",
+    "precio": 50.573354,
+    "plazas": 253137,
+    "fecha": "2020-04-25"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Navarra",
+    "precio": 182.286333,
+    "plazas": 167947,
+    "fecha": "2021-01-28"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Burgos",
+    "precio": 14.689298,
+    "plazas": 107104,
+    "fecha": "2020-01-27"
+  },
+  {
+    "nombre": "Platinum PlashSaveStar",
+    "ubicacion": "Guadalajara",
+    "precio": 18.771911,
+    "plazas": 181181,
+    "fecha": "2020-08-19"
+  }
+]
