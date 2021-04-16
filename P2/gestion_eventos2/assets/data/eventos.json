@@ -1,0 +1,898 @@
+[
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Lugo",
+    "precio": 119.541830,
+    "plazas": 191221,
+    "fecha": "2020-10-06"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Zamora",
+    "precio": 48.792784,
+    "plazas": 225376,
+    "fecha": "2020-02-19"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Albacete",
+    "precio": 54.852176,
+    "plazas": 42607,
+    "fecha": "2021-05-07"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Cuenca",
+    "precio": 173.859921,
+    "plazas": 278385,
+    "fecha": "2020-10-19"
+  },
+  {
+    "nombre": "Platinum PlashSaveStar",
+    "ubicacion": "Asturias",
+    "precio": 178.088315,
+    "plazas": 24526,
+    "fecha": "2021-05-09"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Navarra",
+    "precio": 166.271853,
+    "plazas": 66501,
+    "fecha": "2021-03-03"
+  },
+  {
+    "nombre": "Xanadu Plash",
+    "ubicacion": "Teruel",
+    "precio": 125.759489,
+    "plazas": 247850,
+    "fecha": "2021-05-09"
+  },
+  {
+    "nombre": "Plaopedia",
+    "ubicacion": "Burgos",
+    "precio": 92.868772,
+    "plazas": 92329,
+    "fecha": "2021-01-12"
+  },
+  {
+    "nombre": "Platinum PlashSaveStar",
+    "ubicacion": "Guipúzcoa",
+    "precio": 166.927004,
+    "plazas": 184214,
+    "fecha": "2020-12-31"
+  },
+  {
+    "nombre": "PlaoryxSaveStar",
+    "ubicacion": "Las Palmas",
+    "precio": 158.582429,
+    "plazas": 269499,
+    "fecha": "2020-08-23"
+  },
+  {
+    "nombre": "Plaegy",
+    "ubicacion": "Almería",
+    "precio": 83.000927,
+    "plazas": 136145,
+    "fecha": "2021-02-07"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Huelva",
+    "precio": 130.339250,
+    "plazas": 6785,
+    "fecha": "2021-04-03"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Granada",
+    "precio": 158.184828,
+    "plazas": 227140,
+    "fecha": "2020-07-24"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Sevilla",
+    "precio": 188.691772,
+    "plazas": 299339,
+    "fecha": "2020-10-25"
+  },
+  {
+    "nombre": "Interact Plash",
+    "ubicacion": "Badajoz",
+    "precio": 51.677932,
+    "plazas": 119129,
+    "fecha": "2020-09-25"
+  },
+  {
+    "nombre": "PlaoryxSaveStar",
+    "ubicacion": "Barcelona",
+    "precio": 196.266608,
+    "plazas": 254331,
+    "fecha": "2021-05-09"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Huelva",
+    "precio": 51.844264,
+    "plazas": 206627,
+    "fecha": "2020-08-14"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Alava",
+    "precio": 50.573354,
+    "plazas": 253137,
+    "fecha": "2020-04-25"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Navarra",
+    "precio": 182.286333,
+    "plazas": 167947,
+    "fecha": "2021-01-28"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Burgos",
+    "precio": 14.689298,
+    "plazas": 107104,
+    "fecha": "2020-01-27"
+  },
+  {
+    "nombre": "Platinum PlashSaveStar",
+    "ubicacion": "Guadalajara",
+    "precio": 18.771911,
+    "plazas": 181181,
+    "fecha": "2020-08-19"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Granada",
+    "precio": 16.098430,
+    "plazas": 122276,
+    "fecha": "2020-04-21"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Málaga",
+    "precio": 33.553376,
+    "plazas": 110745,
+    "fecha": "2021-03-05"
+  },
+  {
+    "nombre": "Plaella",
+    "ubicacion": "Orense",
+    "precio": 45.819261,
+    "plazas": 206497,
+    "fecha": "2020-07-27"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Huesca",
+    "precio": 144.410137,
+    "plazas": 260605,
+    "fecha": "2021-03-30"
+  },
+  {
+    "nombre": "PlaoryxSaveStar",
+    "ubicacion": "Avila",
+    "precio": 58.953577,
+    "plazas": 100428,
+    "fecha": "2020-02-11"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Sevilla",
+    "precio": 83.949781,
+    "plazas": 261471,
+    "fecha": "2021-01-17"
+  },
+  {
+    "nombre": "Plan",
+    "ubicacion": "Asturias",
+    "precio": 30.550150,
+    "plazas": 276454,
+    "fecha": "2020-01-24"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Toledo",
+    "precio": 154.321228,
+    "plazas": 57583,
+    "fecha": "2020-10-29"
+  },
+  {
+    "nombre": "Nirvana Plash",
+    "ubicacion": "Cantabria",
+    "precio": 71.776113,
+    "plazas": 190418,
+    "fecha": "2020-01-17"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Lérida",
+    "precio": 89.653859,
+    "plazas": 186655,
+    "fecha": "2020-05-22"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Cuenca",
+    "precio": 49.220012,
+    "plazas": 37450,
+    "fecha": "2021-03-01"
+  },
+  {
+    "nombre": "Xanadu Plash",
+    "ubicacion": "Lérida",
+    "precio": 37.334843,
+    "plazas": 179687,
+    "fecha": "2020-03-02"
+  },
+  {
+    "nombre": "PlaoryxSaveStar",
+    "ubicacion": "Orense",
+    "precio": 113.605471,
+    "plazas": 4184,
+    "fecha": "2020-11-24"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Asturias",
+    "precio": 104.525478,
+    "plazas": 46812,
+    "fecha": "2020-08-27"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "La Rioja",
+    "precio": 15.731031,
+    "plazas": 48517,
+    "fecha": "2020-12-11"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Guipúzcoa",
+    "precio": 191.223739,
+    "plazas": 299089,
+    "fecha": "2020-03-08"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Almería",
+    "precio": 21.263494,
+    "plazas": 90755,
+    "fecha": "2020-11-23"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Almería",
+    "precio": 39.610049,
+    "plazas": 149040,
+    "fecha": "2020-06-03"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Orense",
+    "precio": 12.837480,
+    "plazas": 68086,
+    "fecha": "2020-08-18"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Alicante",
+    "precio": 147.273567,
+    "plazas": 179423,
+    "fecha": "2020-10-26"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Las Palmas",
+    "precio": 124.216969,
+    "plazas": 88876,
+    "fecha": "2020-12-31"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Santa Cruz de Tenerife",
+    "precio": 196.029938,
+    "plazas": 30073,
+    "fecha": "2021-04-07"
+  },
+  {
+    "nombre": "Plaegy",
+    "ubicacion": "Cuenca",
+    "precio": 14.537114,
+    "plazas": 204094,
+    "fecha": "2020-10-01"
+  },
+  {
+    "nombre": "Plaish",
+    "ubicacion": "León",
+    "precio": 171.174663,
+    "plazas": 28901,
+    "fecha": "2021-01-06"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Huesca",
+    "precio": 133.161043,
+    "plazas": 197026,
+    "fecha": "2020-11-12"
+  },
+  {
+    "nombre": "Plaella",
+    "ubicacion": "Las Palmas",
+    "precio": 33.661316,
+    "plazas": 110716,
+    "fecha": "2020-05-07"
+  },
+  {
+    "nombre": "Plaella",
+    "ubicacion": "Huelva",
+    "precio": 183.871007,
+    "plazas": 90085,
+    "fecha": "2021-05-14"
+  },
+  {
+    "nombre": "Plaopedia",
+    "ubicacion": "Huelva",
+    "precio": 92.791242,
+    "plazas": 197279,
+    "fecha": "2020-10-27"
+  },
+  {
+    "nombre": "Nirvana Plash",
+    "ubicacion": "Teruel",
+    "precio": 198.464710,
+    "plazas": 6751,
+    "fecha": "2020-04-03"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Huelva",
+    "precio": 135.780047,
+    "plazas": 291040,
+    "fecha": "2021-03-12"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Alava",
+    "precio": 129.856668,
+    "plazas": 9345,
+    "fecha": "2020-09-08"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Cádiz",
+    "precio": 84.192047,
+    "plazas": 294976,
+    "fecha": "2020-09-04"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Salamanca",
+    "precio": 131.980066,
+    "plazas": 73598,
+    "fecha": "2020-01-14"
+  },
+  {
+    "nombre": "PlafluentSaveStar",
+    "ubicacion": "Gerona",
+    "precio": 144.941526,
+    "plazas": 173466,
+    "fecha": "2020-06-05"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Málaga",
+    "precio": 190.703449,
+    "plazas": 129632,
+    "fecha": "2021-04-28"
+  },
+  {
+    "nombre": "Plan",
+    "ubicacion": "Cantabria",
+    "precio": 100.587867,
+    "plazas": 59671,
+    "fecha": "2020-07-18"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Barcelona",
+    "precio": 134.800562,
+    "plazas": 108979,
+    "fecha": "2020-04-11"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Valladolid",
+    "precio": 29.878406,
+    "plazas": 85252,
+    "fecha": "2021-04-13"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Pontevedra",
+    "precio": 61.657412,
+    "plazas": 265718,
+    "fecha": "2020-12-12"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Las Palmas",
+    "precio": 193.135093,
+    "plazas": 158287,
+    "fecha": "2020-03-15"
+  },
+  {
+    "nombre": "Xanadu Plash",
+    "ubicacion": "La Coruña",
+    "precio": 26.924868,
+    "plazas": 96635,
+    "fecha": "2020-11-19"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Cantabria",
+    "precio": 142.896011,
+    "plazas": 69002,
+    "fecha": "2020-01-20"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Palencia",
+    "precio": 156.002940,
+    "plazas": 199688,
+    "fecha": "2020-11-30"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "La Rioja",
+    "precio": 24.545974,
+    "plazas": 270950,
+    "fecha": "2020-04-15"
+  },
+  {
+    "nombre": "Plaella",
+    "ubicacion": "Valencia",
+    "precio": 111.728805,
+    "plazas": 140952,
+    "fecha": "2020-04-15"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Soria",
+    "precio": 57.500189,
+    "plazas": 278045,
+    "fecha": "2020-06-11"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Alicante",
+    "precio": 22.075976,
+    "plazas": 181915,
+    "fecha": "2020-09-08"
+  },
+  {
+    "nombre": "A  pt Plash",
+    "ubicacion": "Gerona",
+    "precio": 71.424734,
+    "plazas": 140608,
+    "fecha": "2020-08-18"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Navarra",
+    "precio": 172.990473,
+    "plazas": 224723,
+    "fecha": "2021-01-10"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Jaén",
+    "precio": 81.149363,
+    "plazas": 217587,
+    "fecha": "2020-01-12"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Navarra",
+    "precio": 11.628064,
+    "plazas": 41960,
+    "fecha": "2020-12-03"
+  },
+  {
+    "nombre": "PlafluentSaveStar",
+    "ubicacion": "Málaga",
+    "precio": 14.612949,
+    "plazas": 248512,
+    "fecha": "2021-04-20"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Navarra",
+    "precio": 57.824342,
+    "plazas": 293991,
+    "fecha": "2021-03-16"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Córdoba",
+    "precio": 16.181344,
+    "plazas": 237721,
+    "fecha": "2021-02-22"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Ciudad Real",
+    "precio": 109.838549,
+    "plazas": 102410,
+    "fecha": "2021-02-27"
+  },
+  {
+    "nombre": "TextAdvert",
+    "ubicacion": "Guipúzcoa",
+    "precio": 30.200441,
+    "plazas": 68441,
+    "fecha": "2020-02-13"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Palencia",
+    "precio": 14.923637,
+    "plazas": 81744,
+    "fecha": "2021-04-26"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Valladolid",
+    "precio": 164.692419,
+    "plazas": 51869,
+    "fecha": "2020-01-04"
+  },
+  {
+    "nombre": "Paradise Plash",
+    "ubicacion": "Segovia",
+    "precio": 165.227798,
+    "plazas": 205946,
+    "fecha": "2020-07-26"
+  },
+  {
+    "nombre": "A  pt Plash",
+    "ubicacion": "Pontevedra",
+    "precio": 129.166065,
+    "plazas": 54139,
+    "fecha": "2021-02-11"
+  },
+  {
+    "nombre": "Plaaro",
+    "ubicacion": "Teruel",
+    "precio": 162.069959,
+    "plazas": 174252,
+    "fecha": "2021-04-22"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Jaén",
+    "precio": 187.864459,
+    "plazas": 102831,
+    "fecha": "2020-03-02"
+  },
+  {
+    "nombre": "Platinum PlashSaveStar",
+    "ubicacion": "Soria",
+    "precio": 162.695763,
+    "plazas": 43178,
+    "fecha": "2021-01-08"
+  },
+  {
+    "nombre": "Plaistic",
+    "ubicacion": "Gerona",
+    "precio": 150.552064,
+    "plazas": 98752,
+    "fecha": "2021-04-10"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Cádiz",
+    "precio": 13.048152,
+    "plazas": 106107,
+    "fecha": "2020-01-09"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Huelva",
+    "precio": 55.851762,
+    "plazas": 150723,
+    "fecha": "2020-03-26"
+  },
+  {
+    "nombre": "PlafluentSaveStar",
+    "ubicacion": "Cuenca",
+    "precio": 164.383098,
+    "plazas": 261102,
+    "fecha": "2021-04-24"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Islas Baleares",
+    "precio": 111.248978,
+    "plazas": 286308,
+    "fecha": "2021-02-09"
+  },
+  {
+    "nombre": "Paradise Plash",
+    "ubicacion": "Sevilla",
+    "precio": 130.196632,
+    "plazas": 150297,
+    "fecha": "2021-04-06"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Vizcaya",
+    "precio": 91.842344,
+    "plazas": 39739,
+    "fecha": "2020-01-23"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Sevilla",
+    "precio": 49.543466,
+    "plazas": 207620,
+    "fecha": "2020-10-25"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Huesca",
+    "precio": 143.708352,
+    "plazas": 21601,
+    "fecha": "2020-01-03"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Toledo",
+    "precio": 155.994175,
+    "plazas": 181594,
+    "fecha": "2021-04-17"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Soria",
+    "precio": 166.852726,
+    "plazas": 193967,
+    "fecha": "2020-09-02"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Málaga",
+    "precio": 101.622741,
+    "plazas": 57205,
+    "fecha": "2021-04-29"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Guipúzcoa",
+    "precio": 160.165297,
+    "plazas": 242019,
+    "fecha": "2020-08-23"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Asturias",
+    "precio": 127.733107,
+    "plazas": 273968,
+    "fecha": "2020-10-19"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Orense",
+    "precio": 87.437894,
+    "plazas": 247406,
+    "fecha": "2021-02-09"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Valladolid",
+    "precio": 167.467272,
+    "plazas": 81385,
+    "fecha": "2021-03-08"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Islas Baleares",
+    "precio": 113.536561,
+    "plazas": 1114,
+    "fecha": "2021-03-25"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Huelva",
+    "precio": 187.301261,
+    "plazas": 76801,
+    "fecha": "2020-09-17"
+  },
+  {
+    "nombre": "Plaaro",
+    "ubicacion": "La Rioja",
+    "precio": 196.621725,
+    "plazas": 148728,
+    "fecha": "2020-09-01"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Soria",
+    "precio": 58.855767,
+    "plazas": 295051,
+    "fecha": "2021-05-06"
+  },
+  {
+    "nombre": "Plaaro",
+    "ubicacion": "Segovia",
+    "precio": 158.639441,
+    "plazas": 256583,
+    "fecha": "2020-06-10"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Teruel",
+    "precio": 147.960838,
+    "plazas": 109741,
+    "fecha": "2021-05-12"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "León",
+    "precio": 135.730242,
+    "plazas": 99354,
+    "fecha": "2020-02-27"
+  },
+  {
+    "nombre": "PlaoryxSaveStar",
+    "ubicacion": "Santa Cruz de Tenerife",
+    "precio": 38.901445,
+    "plazas": 207291,
+    "fecha": "2021-02-04"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Barcelona",
+    "precio": 102.394245,
+    "plazas": 276277,
+    "fecha": "2021-04-16"
+  },
+  {
+    "nombre": "Interact Plash",
+    "ubicacion": "Huesca",
+    "precio": 37.853208,
+    "plazas": 116248,
+    "fecha": "2021-03-08"
+  },
+  {
+    "nombre": "TextAdvert",
+    "ubicacion": "Badajoz",
+    "precio": 14.473688,
+    "plazas": 37534,
+    "fecha": "2020-09-19"
+  },
+  {
+    "nombre": "Nirvana Plash",
+    "ubicacion": "La Rioja",
+    "precio": 65.639935,
+    "plazas": 223012,
+    "fecha": "2020-03-27"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Cuenca",
+    "precio": 154.943554,
+    "plazas": 107490,
+    "fecha": "2020-05-01"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Teruel",
+    "precio": 87.525669,
+    "plazas": 61657,
+    "fecha": "2020-09-18"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Badajoz",
+    "precio": 198.384363,
+    "plazas": 196535,
+    "fecha": "2020-05-23"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Zaragoza",
+    "precio": 85.963483,
+    "plazas": 219921,
+    "fecha": "2020-11-14"
+  },
+  {
+    "nombre": "Plaopedia",
+    "ubicacion": "Cáceres",
+    "precio": 127.634811,
+    "plazas": 69104,
+    "fecha": "2021-03-22"
+  },
+  {
+    "nombre": "PlafluentSaveStar",
+    "ubicacion": "Málaga",
+    "precio": 158.268803,
+    "plazas": 129288,
+    "fecha": "2021-01-22"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Cantabria",
+    "precio": 77.861648,
+    "plazas": 221681,
+    "fecha": "2020-05-30"
+  },
+  {
+    "nombre": "A  pt Plash",
+    "ubicacion": "Navarra",
+    "precio": 100.203213,
+    "plazas": 263830,
+    "fecha": "2020-06-19"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Guadalajara",
+    "precio": 90.571092,
+    "plazas": 15899,
+    "fecha": "2021-04-14"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Badajoz",
+    "precio": 154.554163,
+    "plazas": 108947,
+    "fecha": "2020-09-25"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Salamanca",
+    "precio": 167.974583,
+    "plazas": 56845,
+    "fecha": "2020-03-15"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "León",
+    "precio": 48.309864,
+    "plazas": 97726,
+    "fecha": "2020-07-30"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Sevilla",
+    "precio": 196.148305,
+    "plazas": 234460,
+    "fecha": "2020-02-25"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Alicante",
+    "precio": 111.194114,
+    "plazas": 296500,
+    "fecha": "2020-05-17"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Almería",
+    "precio": 116.971930,
+    "plazas": 257372,
+    "fecha": "2020-01-25"
+  },
+  {
+    "nombre": "SaveStar",
+    "ubicacion": "Gerona",
+    "precio": 40.239826,
+    "plazas": 283046,
+    "fecha": "2020-09-01"
+  }
+]

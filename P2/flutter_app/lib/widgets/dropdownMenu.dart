@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 
 class DropDownMenu extends StatefulWidget {
-  late List opcs;
+  List<String> opcs;
   DropDownMenu(List opcs) {
+    print(opcs);
     this.opcs = opcs;
     print(opcs);
   }
@@ -11,33 +12,33 @@ class DropDownMenu extends StatefulWidget {
 }
 
 class _DropDownMenu extends State<DropDownMenu> {
-  late List opcs;
-  late List<DropdownMenuItem<String>> _dropDownMenuItems;
-  String? _currentOpc;
+  List<String> opcs;
+  String _currentOpc;
 
   _DropDownMenu(this.opcs);
 
   @override
   void initState() {
     _currentOpc = opcs[0];
-    _dropDownMenuItems = getDropDownMenuItems();
     super.initState();
-  }
-
-  List<DropdownMenuItem<String>> getDropDownMenuItems() {
-    List<DropdownMenuItem<String>> items = [];
-    for (String city in opcs) {
-      items.add(new DropdownMenuItem(value: city, child: new Text(city)));
-    }
-    return items;
   }
 
   @override
   Widget build(BuildContext context) {
-    return new DropdownButton(
+    return new DropdownButton<String>(
       value: _currentOpc,
-      items: _dropDownMenuItems,
-      onChanged: (o) => { setState(() { _currentOpc = o.toString(); }) },
+      items: opcs.map((String value) {
+        return new DropdownMenuItem<String>(
+          value: value,
+          child: new Text(value),
+        );
+      }).toList(),
+      onChanged: (e) {
+        setState(() {
+          _currentOpc = e;
+          print('Ahora es $e');
+        });
+      },
     );
   }
 
