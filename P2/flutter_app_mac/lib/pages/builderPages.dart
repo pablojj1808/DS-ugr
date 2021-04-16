@@ -1,7 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app_mac/models/models.dart';
+import 'package:flutter_app_mac/models/evento.dart';
 import 'package:flutter_app_mac/pages/basicFrame.dart';
 import 'package:flutter_app_mac/pages/gatosPage.dart';
 import 'package:flutter_app_mac/pages/historialPage.dart';
