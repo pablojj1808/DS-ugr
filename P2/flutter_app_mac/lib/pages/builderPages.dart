@@ -1,12 +1,10 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app_mac/models/evento.dart';
 import 'package:flutter_app_mac/pages/basicFrame.dart';
 import 'package:flutter_app_mac/pages/gatosPage.dart';
 import 'package:flutter_app_mac/pages/historialPage.dart';
 import 'package:flutter_app_mac/pages/homePage.dart';
-import 'package:flutter_app_mac/widgets/dropdownMenu.dart';
 import 'package:flutter_app_mac/widgets/gastosWidget.dart';
 import 'package:flutter_app_mac/widgets/historialWidget.dart';
 import 'package:flutter_app_mac/widgets/homePageWidget.dart';

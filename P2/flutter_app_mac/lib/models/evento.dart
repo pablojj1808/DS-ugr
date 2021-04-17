@@ -8,14 +8,23 @@ class Evento {
   double _precio;
   int _publico;
   DateTime _fecha;
-  static int _idSig = 0;
+  static int _idSig = 1;
   int _id;
 
-  Evento(this._name, this._ubicacion, this._publico, this._precio, this._fecha);
+  Evento(this._name, this._ubicacion, this._publico, this._precio, this._fecha) {
+    this._asignarID();
+  }
 
   Evento.fromJSON(Map<String, dynamic> json) {
-    Evento(json['nombre'], json['ubicacion'], json['plazas'], json['precio'],
-        dateFormat.parse(json['fecha']));
+    _name = json['nombre'];
+    _ubicacion = json['ubicacion'];
+    _publico = json['plazas'];
+    _precio = json['precio'];
+    _fecha = dateFormat.parse(json['fecha']);
+    this._asignarID();
+  }
+
+  _asignarID() {
     this._id = _idSig;
     _idSig++;
   }
@@ -26,9 +35,12 @@ class Evento {
   get publico => _publico;
   get precio => _precio;
   get id => _id;
+  get fechaFormat => dateFormat.format(this._fecha);
 
   @override
-  String toString() => "$_name   ~   $_ubicacion";
+  String toString() {
+    return 'Evento{_name: $_name, _ubicacion: $_ubicacion, _precio: $_precio, _publico: $_publico, _fecha: $_fecha, _id: $_id}';
+  }
 
   Map<String, dynamic> toJson() =>
       {'nombre': name, 'ubi': this.ubi, "publico": publico};

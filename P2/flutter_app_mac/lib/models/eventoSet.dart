@@ -1,4 +1,6 @@
+
 import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'evento.dart';
@@ -10,32 +12,42 @@ class EventosSet with ChangeNotifier {
   List<Evento> _eventosOrigin;
   List<Evento> _eventosCurrent;
   int _filtroActual;
+  static bool Cargado = false;
   static const List<String> filtrado = [
-    'selecciona',
+    'por defecto',
     'FECHA',
     'PRECIO',
     'TAMAÑO'
   ];
 
   EventosSet() {
-    this._eventosOrigin = [];
-    this._eventosCurrent = [];
+    this._eventosOrigin = <Evento>[];
     this._filtroActual = 0;
-    this._cargarDatos();
-  }
 
-  void _cargarDatos() async {
-    print('cargand datos...');
+  }
+/* cargarDatos() {
+    this._eventosOrigin.add(Evento('Nombre 1', 'Madrid', 3000, 30, '2021-01-10'));
+    this._eventosOrigin.add(Evento('Nombre 1', 'Madrid', 3000, 3, '2021-01-10'));
+    this._eventosOrigin.add(Evento('Nombre 1', 'Madrid', 3000, 1, '2021-01-10'));
+    this._eventosOrigin.add(Evento('Nombre 1', 'Madrid', 3000, 90, '2021-01-10'));
+  }*/
+  Future<List<Evento>> cargarDatos() async {
     var txt = await rootBundle.loadString('assets/data/eventos.json');
     var json = jsonDecode(txt);
-    _eventosOrigin =
-        List<Evento>.from(json.map((model) => Evento.fromJSON(model)));
+    this._eventosOrigin = List<Evento>.from(json.map((model) => Evento.fromJSON(model)));
     this._eventosCurrent = List<Evento>.from(this._eventosOrigin);
+    Cargado = true;
+    return this._eventosOrigin;
   }
 
-  get eventos => this._eventosCurrent;
+
+  List<Evento> get eventos {
+    this.ordenar(filtroActual);
+    return this._eventosCurrent;
+  }
+
   get filtroActual => EventosSet.filtrado[this._filtroActual];
-  set filtro(int n) => this._filtroActual = n;
+  get tam => this._eventosOrigin.length;
 
   ordenar(String key) {
     int n = filtrado.indexOf(key);
@@ -44,13 +56,13 @@ class EventosSet with ChangeNotifier {
         this._eventosCurrent = List<Evento>.from(this._eventosOrigin);
         break;
       case 1:
-        this._eventosCurrent = _ordenarPorFecha();
+        _ordenarPorFecha();
         break;
       case 2:
-        this._eventosCurrent = _ordenarPorPrecio();
+        _ordenarPorPrecio();
         break;
       case 3:
-        this._eventosCurrent = _ordenarPorTam();
+        _ordenarPorTam();
         break;
     }
     if(n != -1) this._filtroActual = n;
@@ -71,6 +83,6 @@ class EventosSet with ChangeNotifier {
 
   @override
   String toString() {
-    return '{$_eventosCurrent}';
+    return '{$_eventosOrigin}';
   }
 }
