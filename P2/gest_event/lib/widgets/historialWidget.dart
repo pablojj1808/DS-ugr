@@ -20,7 +20,7 @@ class _PageHistorialWidget extends StatelessWidget {
 
     return FutureBuilder(
         future: conjunto.cargarDatos(),
-        builder: (context, AsyncSnapshot<List<Evento>> snap) {
+        builder: (context, AsyncSnapshot<EventosSet> snap) {
           if (snap.hasError) {
             print("${snap.error.toString()}, ${snap.error.runtimeType}");
             return Center(
@@ -36,7 +36,7 @@ class _PageHistorialWidget extends StatelessWidget {
             body: Center(
               child: Column(children: [
                 DropdownButton<String>(
-                  value: conjunto.filtroActual,
+                  value: snap.data.filtroActual,
                   icon: const Icon(Icons.arrow_downward),
                   iconSize: 24,
                   elevation: 16,
@@ -46,7 +46,7 @@ class _PageHistorialWidget extends StatelessWidget {
                     color: Colors.blue,
                   ),
                   onChanged: (String newValue) {
-                    conjunto.ordenar(newValue);
+                    snap.data.ordenar(newValue);
                   },
                   items: EventosSet.filtrado
                       .map<DropdownMenuItem<String>>((String value) {
@@ -61,7 +61,7 @@ class _PageHistorialWidget extends StatelessWidget {
                     scrollDirection: Axis.vertical,
                     shrinkWrap: true,
                     padding: EdgeInsets.fromLTRB(3, 5, 3, 5),
-                    children: conjunto.eventos.map<Widget>((e) {
+                    children: snap.data.eventos.map<Widget>((e) {
                       return Container(
                         decoration: new BoxDecoration(
                             border: Border.all(color: const Color(0xFF4CCBF8))),

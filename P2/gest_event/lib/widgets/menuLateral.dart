@@ -31,7 +31,7 @@ class MenuLateral extends StatelessWidget {
                 builder: (c) => AlertDialog(
                       title: Text('¿Quiénes somos?'),
                       content: Text(
-                          'Práctica 3 legacy code de la asignatura Desarrollo de software realizada por: '
+                          'Práctica 3 de la asignatura Desarrollo de software realizada por: '
                           'Raquel Moliona R y Pablo Jiménez J'),
                     ));
           }),

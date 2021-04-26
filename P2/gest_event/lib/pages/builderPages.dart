@@ -5,6 +5,7 @@ import 'package:gest_event/pages/basicFrame.dart';
 import 'package:gest_event/pages/gatosPage.dart';
 import 'package:gest_event/pages/historialPage.dart';
 import 'package:gest_event/pages/homePage.dart';
+import 'package:gest_event/pages/ubicacionPage.dart';
 import 'package:gest_event/widgets/gastosWidget.dart';
 import 'package:gest_event/widgets/historialWidget.dart';
 import 'package:gest_event/widgets/homePageWidget.dart';
@@ -73,6 +74,29 @@ class PageHistoryBuilder implements Builder {
   @override
   void crearBody() {
     body = new HistorialPage(Builder.menuLateral, new HistorialWidget());
+  }
+
+  @override
+  void crearFrame() {
+    frame = new BasicFrame(
+        body
+    );
+  }
+
+  @override
+  Widget getBuilt() {
+    return frame;
+  }
+
+}
+
+class PageUbicacionBuilder implements Builder {
+  @override
+  Widget body, built, frame;
+
+  @override
+  void crearBody() {
+    body = new UbicacionPage(Builder.menuLateral);
   }
 
   @override

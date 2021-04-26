@@ -25,12 +25,12 @@ class EventosSet with ChangeNotifier {
 
   }
 
-  Future<List<Evento>> cargarDatos() async {
+  Future<EventosSet> cargarDatos() async {
     var txt = await rootBundle.loadString('assets/data/eventos.json');
     var json = jsonDecode(txt);
     this._eventos = List<Evento>.from(json.map((model) => Evento.fromJSON(model)));
-
-    return this._eventos;
+    this.ordenar(filtrado[this._filtroActual]);
+    return this;
   }
 
 
@@ -74,12 +74,11 @@ class EventosSet with ChangeNotifier {
   }
 
   _ordenarPorID() {
-    print('==========================================ordeno por ud');
     this._eventos.sort((e1, e2) => e1.id.compareTo(e2.id));
   }
 
   @override
   String toString() {
-    return '{$_eventos}';
+    return '{$_eventos}\n';
   }
 }
