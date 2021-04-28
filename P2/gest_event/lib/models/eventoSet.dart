@@ -40,6 +40,7 @@ class EventosSet with ChangeNotifier {
 
   get filtroActual => EventosSet.filtrado[this._filtroActual];
   get tam => this._eventos.length;
+  set filtroActual(int f) => this._filtroActual = f;
 
   ordenar(String key) {
     int n = filtrado.indexOf(key);
