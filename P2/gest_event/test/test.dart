@@ -11,19 +11,20 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:gest_event/models/evento.dart';
 import 'package:gest_event/models/eventoSet.dart';
 import 'package:gest_event/pages/builderPages.dart';
+import 'package:gest_event/widgets/recomendaciones.dart';
 
 void main() {
   setUpAll(() {
     TestWidgetsFlutterBinding.ensureInitialized();
   });
-  testsModelos();
+  testsWidgets();
 }
 
 testsModelos() {
 
   group('PRUEBA DE MODELOS', () {
 
-    test('constructor evento', () {
+    test('constructor de evento', () {
       final e = new Evento('', '', 0, 0, new DateTime.now(),'');
 
       expect(e.numEntradasVendidas, 0);
@@ -68,26 +69,55 @@ testsModelos() {
 
 testsWidgets() {
   group('PRUEBA DE WIDGETS', () {
-    testWidgets('abriendo Menú lateral', (WidgetTester tester) async {
+    testWidgets('abrir Menú lateral', (WidgetTester tester) async {
       // Build our app and trigger a frame.
       var d = Director();
       await tester.pumpWidget(d.constructPage(new PageHomeBuilder()));
 
-      // Verify that our counter starts at 0.
-      expect(find.text('0'), findsOneWidget);
-      expect(find.text('1'), findsNothing);
+      expect(find.text('FECHA'), findsNothing);
 
-      // Tap the '+' icon and trigger a frame.
-      await tester.tap(find.byIcon(Icons.add));
+      await tester.tap(find.byType(Drawer));
       await tester.pump();
 
-      // Verify that our counter has incremented.
-      expect(find.text('0'), findsNothing);
-      expect(find.text('1'), findsOneWidget);
+      expect(find.byType(DropdownMenuItem), findsWidgets);
     });
+
+    testWidgets('Página del historial', (WidgetTester tester) async {
+      var d = Director();
+      await tester.pumpWidget(d.constructPage(new PageHistoryBuilder()));
+      expect(find.text('Historial de eventos'), findsOneWidget);
+    });
+
+    testWidgets('Abrir dropBotton - Cambio filtro', (WidgetTester tester) async {
+      var d = Director();
+      await tester.pumpWidget(d.constructPage(new PageHistoryBuilder()));
+
+      expect(find.text('FECHA'), findsNothing);
+
+      await tester.tap(find.byIcon(Icons.arrow_downward));
+      await tester.pump();
+
+      expect(find.byType(DropdownMenuItem), findsWidgets);
+    });
+
+    testWidgets('Página en construcción', (WidgetTester tester) async {
+      var d = Director();
+      await tester.pumpWidget(d.constructPage(new PageUbicacionBuilder()));
+
+      expect(find.byType(AlertDialog), findsOneWidget);
+
+      await tester.tap(find.byType(TextButton));
+      await tester.pump();
+
+      expect(find.text('Inicio'), findsWidgets);
+    });
+
   });
 }
 
+testIntegracion() {
+
+}
 
 /// Helpers functions for testing...
 bool ordenAscendente(List<Evento> v) {
