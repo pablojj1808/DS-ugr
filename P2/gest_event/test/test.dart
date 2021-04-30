@@ -11,6 +11,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:gest_event/models/evento.dart';
 import 'package:gest_event/models/eventoSet.dart';
 import 'package:gest_event/pages/builderPages.dart';
+import 'package:gest_event/pages/historialPage.dart';
 import 'package:gest_event/widgets/recomendaciones.dart';
 
 void main() {
@@ -74,12 +75,16 @@ testsWidgets() {
       var d = Director();
       await tester.pumpWidget(d.constructPage(new PageHomeBuilder()));
 
-      expect(find.text('FECHA'), findsNothing);
+      expect(find.text('RECOMENDACIONES'), findsOneWidget);
+      expect(find.byIcon(Icons.home), findsNothing);
+      expect(find.byIcon(Icons.menu), findsOneWidget);
+      
+      //await tester.tap(find.byIcon(Icons.menu));
+      await tester.drag(find.byType(ListView), Offset(-500.0, 0.0));
+      await tester.pumpAndSettle();
 
-      await tester.tap(find.byType(Drawer));
-      await tester.pump();
-
-      expect(find.byType(DropdownMenuItem), findsWidgets);
+      expect(find.text('Inicio'), findsNothing);
+      expect(find.byIcon(Icons.home), findsOneWidget);
     });
 
     testWidgets('Página del historial', (WidgetTester tester) async {
@@ -91,14 +96,41 @@ testsWidgets() {
     testWidgets('Abrir dropBotton - Cambio filtro', (WidgetTester tester) async {
       var d = Director();
       await tester.pumpWidget(d.constructPage(new PageHistoryBuilder()));
+      await tester.pump(new Duration(seconds: 1));
 
-      expect(find.text('FECHA'), findsNothing);
+      expect(find.text('Historial de eventos'), findsOneWidget);
+      expect(find.text('por defecto'), findsOneWidget);
+      expect(find.text('FECHA'), findsOneWidget);
+      expect(find.text('PRECIO'), findsOneWidget);
+      expect(find.text('TAMAÑO'), findsOneWidget);
 
       await tester.tap(find.byIcon(Icons.arrow_downward));
       await tester.pump();
 
-      expect(find.byType(DropdownMenuItem), findsWidgets);
+      expect(find.text('Historial de eventos'), findsOneWidget);
+      //expect(find.text('por defecto'), findsNothing);
+      expect(find.text('FECHA'), findsNothing);
+      expect(find.text('PRECIO'), findsWidgets);
+      expect(find.text('TAMAÑO'), findsWidgets);
     });
+
+    testWidgets('En construccion', (WidgetTester tester) async {
+      var d = Director();
+      await tester.pumpWidget(d.constructPage(new PageUbicacionBuilder()));
+
+      expect(find.text('Vale'), findsOneWidget);
+      expect(find.text('Esta página no está aún disponible...'), findsOneWidget);
+      expect(find.text('RECOMENDACIONES'), findsNothing);
+
+
+      await tester.tap(find.byType(TextButton));
+      await tester.pumpAndSettle();
+
+      expect(find.text('Vale'), findsNothing);
+      expect(find.text('Esta página no está aún disponible...'), findsNothing);
+      expect(find.text('RECOMENDACIONES'), findsOneWidget);
+    });
+
 
     testWidgets('Página en construcción', (WidgetTester tester) async {
       var d = Director();
