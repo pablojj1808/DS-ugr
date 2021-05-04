@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "nombre": "SaveStar",
+    "ubicacion": "Valladolid",
+    "precio": 168.222771,
+    "plazas": 29871,
+    "fecha": "2020-3-29"
+  },
+  {
+    "id": 2,
+    "nombre": "Paradise Plash",
+    "ubicacion": "Orense",
+    "precio": 82.631247,
+    "plazas": 20494,
+    "fecha": "2020-6-22"
+  },
+  {
+    "id": 3,
+    "nombre": "Nirvana Plash",
+    "ubicacion": "Zamora",
+    "precio": 53.029651,
+    "plazas": 167486,
+    "fecha": "2021-1-12"
+  },
+  {
+    "id": 4,
+    "nombre": "SaveStar",
+    "ubicacion": "Alava",
+    "precio": 134.173896,
+    "plazas": 183090,
+    "fecha": "2021-2-20"
+  },
+  {
+    "id": 5,
+    "nombre": "SaveStar",
+    "ubicacion": "La Rioja",
+    "precio": 127.802451,
+    "plazas": 53242,
+    "fecha": "2021-1-28"
+  },
+  {
+    "id": 6,
+    "nombre": "SaveStar",
+    "ubicacion": "Ciudad Real",
+    "precio": 48.925892,
+    "plazas": 209386,
+    "fecha": "2020-9-4"
+  },
+  {
+    "id": 7,
+    "nombre": "Xanadu Plash",
+    "ubicacion": "Almería",
+    "precio": 64.491090,
+    "plazas": 131193,
+    "fecha": "2020-9-9"
+  },
+  {
+    "id": 8,
+    "nombre": "Interact Plash",
+    "ubicacion": "Sevilla",
+    "precio": 160.333279,
+    "plazas": 113480,
+    "fecha": "2020-4-16"
+  },
+  {
+    "id": 9,
+    "nombre": "Plaistic",
+    "ubicacion": "Islas Baleares",
+    "precio": 148.681664,
+    "plazas": 193174,
+    "fecha": "2020-2-2"
+  },
+  {
+    "id": 10,
+    "nombre": "SaveStar",
+    "ubicacion": "Sevilla",
+    "precio": 158.569384,
+    "plazas": 31819,
+    "fecha": "2021-4-2"
+  },
+  {
+    "id": 11,
+    "nombre": "Plaegy",
+    "ubicacion": "Orense",
+    "precio": 36.170888,
+    "plazas": 285908,
+    "fecha": "2021-4-16"
+  },
+  {
+    "id": 12,
+    "nombre": "SaveStar",
+    "ubicacion": "Navarra",
+    "precio": 136.928962,
+    "plazas": 74827,
+    "fecha": "2020-8-25"
+  },
+  {
+    "id": 13,
+    "nombre": "Plaopedia",
+    "ubicacion": "Lérida",
+    "precio": 15.915360,
+    "plazas": 78963,
+    "fecha": "2021-2-12"
+  },
+  {
+    "id": 14,
+    "nombre": "SaveStar",
+    "ubicacion": "Navarra",
+    "precio": 88.048016,
+    "plazas": 3728,
+    "fecha": "2021-1-24"
+  },
+  {
+    "id": 15,
+    "nombre": "SaveStar",
+    "ubicacion": "Lugo",
+    "precio": 112.274163,
+    "plazas": 263609,
+    "fecha": "2020-11-1"
+  }
+]
